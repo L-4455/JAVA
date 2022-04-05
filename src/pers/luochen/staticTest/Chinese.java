@@ -3,7 +3,7 @@
  * @Date: 2022-04-05 22:19:53
  * @LastEditTime: 2022-04-05 22:59:35
  */
-package pers.luochen.statictest;
+package pers.luochen.staticTest;
 
 public class Chinese {
     /**
