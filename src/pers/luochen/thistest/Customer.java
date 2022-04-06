@@ -3,7 +3,7 @@ package pers.luochen.thistest;
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-04 22:38:45
- * @LastEditTime: 2022-04-04 23:46:10
+ * @LastEditTime: 2022-04-06 17:51:49
  */
 
 public class Customer {
@@ -19,14 +19,18 @@ public class Customer {
      */
     String name;
     
-    //不带static的方法
+    /**
+     * 不带static的方法
+     */
     public void doSome(){
         //省略写法
         //System.out.println(name);
         //完整写法
         System.out.println(this.name);
     }
-    //带有static的方法
+    /**
+     * 带有static的方法
+     */
     public static void doOther(){
         //编译错误,无法在带有static中直接调用对象中的实例变量
         //System.out.println(name);
@@ -43,7 +47,9 @@ public class Customer {
      * 3.不带有static的变量为实例变量,实例变量的调用需要对象的参与,所以要用 引用.的形式调用,
      */
     
-    //无参数构造方法
+    /**
+     * 无参数构造方法
+     */
     public Customer(){
 
     }

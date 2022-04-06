@@ -1,8 +1,14 @@
+/**
+ * @author: LiZhiHao
+ * @Date: 2021-05-27 21:55:56
+ * @LastEditTime: 2022-04-06 18:15:07
+ */
 package pers.luochen.user;
-/*
-import pers.luochen.A.A;
-import pers.luochen.Uers.Address;
-import pers.luochen.Uers.User;
+
+import javax.sound.midi.Soundbank;
+import javax.sound.sampled.SourceDataLine;
+
+import pers.luochen.a.*;
 
 public class UserTest {
     public static void main(String[] args) {
@@ -11,60 +17,27 @@ public class UserTest {
         w.sex = false;
         w.number = 1000;
         w.sex = true;
+        
         w.addr = new Address();
         w.addr.city = "漯河";
         w.addr.address = "召陵区";
         w.addr.zipCode = 46000;
-        A.Q(w.name);
-        A.Q(w.number);
-        A.Q(w.sex);
-        A.Q(w.addr.address);
-        A.Q(w.addr.city);
-        A.Q(w.addr.zipCode);
-    }
-    UserTest.dosome();
-}
-
-/**
- * 这是一个带有staic的方法，方法名dosome；
- * <p>
- * public static void dosome(){
- * System.out.println("This wod");
- * }
- */
-
-
-public class UserTest {
-    public static void main(String[] args) {
-        User w = new User();
-        w.setAge(-111);
+        Au.q(w.name);
+        Au.q(w.number);
+        Au.q(w.sex);
+        Au.q(w.addr.address);
+        Au.q(w.addr.city);
+        Au.q(w.addr.zipCode);
+        
+        User user = new User();
+        user.setAge(-111);
         System.out.println(w.getAge());
+
+        UserTest.doSome();
     }
-
+   
+    public static void doSome(){
+        System.out.println("我是你爹");
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

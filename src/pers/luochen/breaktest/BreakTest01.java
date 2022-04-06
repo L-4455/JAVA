@@ -1,7 +1,7 @@
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-26 19:23:24
- * @LastEditTime: 2022-03-29 20:22:12
+ * @LastEditTime: 2022-04-06 18:15:36
  */
 package pers.luochen.breaktest;
 
@@ -18,8 +18,8 @@ public class BreakTest01 {
          * break的语法是：break;
          * break;就是一条完整的java语句。
          * */
-
-        for (int i = 0; i <= 10; i++) {
+        int number = 0 ,number1 = 10;
+        for (int i = number; i <= number1; i++) {
             if (i == 5) {
                 break;
             }
@@ -27,7 +27,7 @@ public class BreakTest01 {
         }
         System.out.println("----------------");
         int i = 0;
-        while (i <= 10) {
+        while (i <= number1) {
             i++;
             if (i == 6) {
                 break;

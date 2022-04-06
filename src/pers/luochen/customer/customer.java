@@ -3,10 +3,10 @@ package pers.luochen.customer;
 /**
  * @author LiZhiHao
  */
-public class customer {
+public class Customer {
     String name;
 
-    public customer(){
+    public Customer(){
 
     }
     public void shopping(){

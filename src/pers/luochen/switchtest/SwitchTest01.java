@@ -1,3 +1,8 @@
+/**
+ * @author: LiZhiHao
+ * @Date: 2022-02-24 18:39:46
+ * @LastEditTime: 2022-04-06 17:50:03
+ */
 package pers.luochen.switchtest;
 
 /**
@@ -67,12 +72,16 @@ public class SwitchTest01 {
         switch(week){
             case 1:
                 System.out.println("周一");
+                break;
             case 2:
                 System.out.println("周二");
+                break;
             case 3:
                 System.out.println("周三");
+                break;
             case 4:
                 System.out.println("周四");
+                break;
             case 5:
                 System.out.println("周五");
                 break;
@@ -90,9 +99,14 @@ public class SwitchTest01 {
         * 当case合并时，只要有一个值可以与表达式的值匹配成功就可以执行下面的java语句。
         * */
         int w = 6;
+
         switch(w){
             case 5: case 6: case 7:
                 System.out.println("今天是黑色星期五");
+                return;
+                default;
         }
+        
+        
     }
 }
