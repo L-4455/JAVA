@@ -1,8 +1,11 @@
+/**
+ * @author: LiZhiHao
+ * @Date: 2022-03-16 22:59:19
+ * @LastEditTime: 2022-04-06 22:06:00
+ */
 package pers.luochen.methodtest;
 
-/**
- * @author LiZhiHao
- */
+
 public class Print {
     public static void A(Byte a){
         System.out.println(a);
