@@ -1,9 +1,9 @@
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-05 22:19:53
- * @LastEditTime: 2022-04-05 22:59:35
+ * @LastEditTime: 2022-04-06 17:34:03
  */
-package pers.luochen.staticTest;
+package pers.luochen.statictest;
 
 public class Chinese {
     /**

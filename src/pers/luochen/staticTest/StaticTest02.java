@@ -3,7 +3,7 @@
  * @Date: 2022-04-05 23:28:43
  * @LastEditTime: 2022-04-05 23:31:46
  */
-package pers.luochen.staticTest;
+package pers.luochen.statictest;
 
 public class StaticTest02 {
     static{

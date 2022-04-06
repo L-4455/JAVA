@@ -1,4 +1,4 @@
-package pers.luochen.staticTest;
+package pers.luochen.statictest;
 
 /**
  * @author LiZhiHao
