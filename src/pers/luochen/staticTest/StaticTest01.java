@@ -20,20 +20,20 @@ public class StaticTest01 {
      * 2.要在修饰的变量或方法前加static关键字即可.
      */
     public static void main(String[] args) {
-        /**
-         * 创建Chinese对象
+        /*
+          创建Chinese对象
          */
         Chinese chinese1 = new Chinese(10, "lisi");
         chinese1.doSome();
-        /**
-         * 创建Chinese对象
+        /*
+          创建Chinese对象
          */
         Chinese chinese2 = new Chinese(20, "zhangsan");
         chinese2.doSome();
 
-        /**
-         * 以上代码看出,"中国"也就是country,再重复调用.每一个对象中都保存了这个值.
-         * 在java中如果每一个对象都保存了一个属性,而且属性的值是一样的,那么这就可以使用static来修饰这个属性.
+        /*
+          以上代码看出,"中国"也就是country,再重复调用.每一个对象中都保存了这个值.
+          在java中如果每一个对象都保存了一个属性,而且属性的值是一样的,那么这就可以使用static来修饰这个属性.
          */
 
         // 创建Chinese对象
