@@ -1,15 +1,14 @@
 /**
  * @author: LiZhiHao
  * @Date: 2021-08-08 23:15:20
- * @LastEditTime: 2022-04-06 18:16:40
+ * @LastEditTime: 2022-04-06 21:03:58
  */
 package pers.luochen.codegym;
 
-//import java.util.Scanner;
 
 public class CodeGymTest {
     public static void main(String[] args) {
-        
+
         int i =7;
         System.out.println(i);
     }

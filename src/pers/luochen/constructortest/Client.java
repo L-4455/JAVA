@@ -1,7 +1,7 @@
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-02 22:04:12
- * @LastEditTime: 2022-04-06 18:19:26
+ * @LastEditTime: 2022-04-06 21:01:26
  */
 package pers.luochen.constructortest;
 
@@ -11,7 +11,7 @@ public class Client {
      */
     public Client() {
         int number = 0, number1 = 10;
-        for (int i = n; i <= number1; i++) {
+        for (int i = number; i <= number1; i++) {
             System.out.println(i);
         }
         System.out.println("你调用了无参数构造方法");

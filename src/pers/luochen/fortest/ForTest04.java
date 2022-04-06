@@ -1,3 +1,8 @@
+/**
+ * @author: LiZhiHao
+ * @Date: 2022-02-26 14:36:07
+ * @LastEditTime: 2022-04-06 21:15:26
+ */
 package pers.luochen.fortest;
 
 /**
@@ -12,8 +17,8 @@ public class ForTest04 {
          * 素数：只能被1和自身整除，不能被其他数整除的数叫做素数或质素。
          *
          * */
-
-        for (int num = 2; num <= 100; num++) {
+        int number2 = 2 , number100 = 100;
+        for (int num = number2; num <= number100; num++) {
             boolean judge = true;
             for (int num1 = 2; num1 < num; num1++) {
                 if (num % num1 == 0) {
@@ -28,7 +33,7 @@ public class ForTest04 {
         System.out.println("--------------------------------------------");
 
         int row = 0;
-        for (int num = 2; num <= 10000; num++) {
+        for (int num = number2; num <= number100; num++) {
             //想要输出1-?的素数，只需要改一下num的值即可。比如说：10000
             //遍历2到100
             boolean judge = true;

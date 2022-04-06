@@ -6,15 +6,18 @@
 package pers.luochen.statictest;
 
 public class StaticTest02 {
-    static{
+    static {
         System.out.println("开始1");
     }
-    static{
+
+    static {
         System.out.println("开始2");
     }
-    static{
+
+    static {
         System.out.println("开始3");
     }
+
     public static void main(String[] args) {
         /*
           static代码块

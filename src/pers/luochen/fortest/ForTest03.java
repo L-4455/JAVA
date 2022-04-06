@@ -1,3 +1,8 @@
+/**
+ * @author: LiZhiHao
+ * @Date: 2022-02-26 13:59:27
+ * @LastEditTime: 2022-04-06 21:14:12
+ */
 package pers.luochen.fortest;
 
 /**
@@ -14,8 +19,8 @@ public class ForTest03 {
          * 1*3=3 2*3=6
          * 1*4=4 2*4=8
          * */
-
-        for (int num = 1; num <= 9; num++) {
+        int number1 =1 ,number9 = 9;
+        for (int num = number1; num <= number9; num++) {
             for (int num1 = 1; num1 <= num; num1++) {
                 System.out.print(num1 + "*" + num + "="+ (num1  * num + " "));
             }

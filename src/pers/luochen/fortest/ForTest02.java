@@ -1,7 +1,7 @@
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-25 19:10:04
- * @LastEditTime: 2022-03-29 20:21:57
+ * @LastEditTime: 2022-04-06 21:13:12
  */
 package pers.luochen.fortest;
 
@@ -14,8 +14,9 @@ import java.util.Objects;
  * @date 2022/2/25 19:10
  */
 public class ForTest02 {
+    static String register = "register" ; static String  login = "login";
     public static void main(String[] args) {
-        try (/*
+        try (   /*
                  *
                  * for循环登录注册系统
                  * */
@@ -32,7 +33,7 @@ public class ForTest02 {
             //System.out.println("登录成功");
             //logInRegister = scanner.next();
 
-            if (Objects.equals(logInRegister, "register")) {
+            if (Objects.equals(logInRegister, register)) {
                 Au.q("请输入账号：");
                 account1 = scanner.nextInt();
                 Au.q("请输入密码：");
@@ -41,7 +42,7 @@ public class ForTest02 {
 
             }
             logInRegister = scanner.next();
-            if (Objects.equals(logInRegister, "login")) {
+            if (Objects.equals(logInRegister, login)) {
                 Au.q("请输入账号：");
                 account2 = scanner.nextInt();
                 Au.q("请输入密码：");

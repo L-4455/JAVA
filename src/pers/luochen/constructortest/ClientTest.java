@@ -1,7 +1,7 @@
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-02 22:03:18
- * @LastEditTime: 2022-04-03 16:47:05
+ * @LastEditTime: 2022-04-06 21:01:07
  */
 package pers.luochen.constructortest;
 
@@ -14,11 +14,11 @@ public class ClientTest {
         //创建对象,并调用构造方法.
         Client client = new Client();
 
-        client.setID(10);
+        client.setId(10);
         client.setAge(24);
         client.setAdder("郑州");
         client.setName("zhangsan");
-        System.out.println(client.getID());
+        System.out.println(client.getId());
         System.out.println(client.getAge());
         System.out.println(client.getAdder());
         System.out.println(client.getName());

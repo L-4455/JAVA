@@ -1,7 +1,7 @@
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-24 18:39:46
- * @LastEditTime: 2022-04-06 17:50:03
+ * @LastEditTime: 2022-04-06 21:03:45
  */
 package pers.luochen.switchtest;
 
@@ -101,12 +101,12 @@ public class SwitchTest01 {
         int w = 6;
 
         switch(w){
-            case 5: case 6: case 7:
+            case 5: 
+            case 6: 
+            case 7:
                 System.out.println("今天是黑色星期五");
-                return;
-                default;
+            break;
+            default:
         }
-        
-        
     }
 }

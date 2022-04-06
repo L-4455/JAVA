@@ -1,10 +1,12 @@
+/**
+ * @author: LiZhiHao
+ * @Date: 2022-02-25 14:32:53
+ * @LastEditTime: 2022-04-06 20:58:57
+ */
 package pers.luochen.fortest;
 
-/**
- * @author LiZhiHao
- * @date 2022/2/25 14:32
- */
 public class ForTest01 {
+    static int number0 = 0 , number1 = 1 , number2 = 2 , number3 =3 ,number10 = 10, number100 = 100;
     public static void main(String[] args) {
         /*
          *
@@ -21,28 +23,28 @@ public class ForTest01 {
          *                  直到布尔类型为false，则整个循环体结束。
          *
          * */
-        for (int i = 10; i >= 0; i = i - 1) {
+        for (int i = number0; i >= number10; i = i - 1) {
             System.out.println(i);
         }
         System.out.println("----------------------------");
-        for (int i = 0; i <= 10; i = i + 1) {
+        for (int i = number0; i <= number1; i = i + 1) {
             System.out.println(i);
         }
         System.out.println("----------------------------");
-        for (int i = 0; i <= 10; i++) {
+        for (int i = number0; i <= number10; i++) {
             System.out.println(i);
         }
         System.out.println("----------------------------");
-        for (int i = 0; i <= 10; i += 1) {
+        for (int i = number0; i <= number10; i += 1) {
             System.out.println(i);
         }
         System.out.println("----------------------------");
-        for (int i = 2; i <= 10; i += 2) {
+        for (int i = number2; i <= number10 ; i += number2) {
             System.out.println("i---->" + i);
             //1-10的偶数
         }
         System.out.println("----------------------------");
-        for (int i = 1; i <= 10; i += 2) {
+        for (int i = number0; i <= number10; i += number2) {
             System.out.println("i----->" + i);
             //1-10的奇数
         }
@@ -57,9 +59,9 @@ public class ForTest01 {
          *       }
          *   }
          * */
-        for (int i = 0; i <= 10; i++) {
+        for (int i = number0; i <= number10; i++) {
             //循环10次，但没有输出执行结果，只循环。
-            for (int j = 0; j <= 3; j++) {
+            for (int j = number0; j <= number3; j++) {
                 //循环3次
                 //0 1 2 3
                 System.out.println("j---->" + j);
@@ -77,14 +79,14 @@ public class ForTest01 {
          * */
         System.out.println("----------------------------");
         //for嵌套使用
-        for (int i = 1; i <= 100; i++) {
+        for (int i = number1; i <= number100; i++) {
             if (i % 2 != 0) {
                 //判断是否为奇数和偶数，对2求余数，如果余数等于0则为偶数，如果不等于0则为奇数.
                 System.out.println(i);
             }
         }
         System.out.println("----------------------------");
-        for (int i = 1; i <= 100; i += 2) {
+        for (int i = number1; i <= number100; i += number2) {
             //累加2，求出奇数。
             System.out.println(i);
         }
