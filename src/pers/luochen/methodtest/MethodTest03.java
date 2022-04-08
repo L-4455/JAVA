@@ -1,9 +1,10 @@
+/**
+ * @author: LiZhiHao
+ * @Date: 2022-02-28 15:29:22
+ * @LastEditTime: 2022-04-08 19:16:43
+ */
 package pers.luochen.methodtest;
 
-/**
- * @author LiZhiHao
- * @date 2022/2/28 15:29
- */
 public class MethodTest03 {
     public static void main(String[] args) {
         /*
@@ -26,7 +27,7 @@ public class MethodTest03 {
 
         //调用aSome方法
         //完整的调用方法
-        A.aSome();
+        MethodTest03.doSome();
         //省略的调用方法
         //编译报错：找不到符号
         //aSome();
@@ -46,7 +47,7 @@ public class MethodTest03 {
     public static void weather(){
         System.out.println("Hi,China");
         //编译错误，在本类中找不到aSome方法。需要使用类名的形式调用
-        A.aSome();
+        Ah.aSome();
         //这个不会报错，因为在本类中也存在aSome方法。如果想要调用A类中的aSome的方法就需要加上类名
         //这个方法会从本类中去寻找aSome方法。
         aSome();
@@ -56,7 +57,7 @@ public class MethodTest03 {
     }
 }
 
-class A {
+class Ah {
     public static void main(String [] args){
 
     }

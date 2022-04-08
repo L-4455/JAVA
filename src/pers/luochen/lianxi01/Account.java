@@ -1,34 +1,39 @@
+/**
+ * @author: LiZhiHao
+ * @Date: 2021-05-27 21:55:56
+ * @LastEditTime: 2022-04-08 19:19:28
+ */
 package pers.luochen.lianxi01;
 
 /*
- * 需求：创建一个Account的类，属性有：ID，balance
+ * 需求：创建一个Account的类，属性有：id，balance
  * */
 
 /**
  * @author LiZhiHao
  */
 public class Account {
-    private int ID;
+    private int id;
     private int balance;
 
     public Account() {
 
     }
 
-    /*public Account(int ID, int balance) {
-        this.ID = ID;
+    /*public Account(int id, int balance) {
+        this.id = id;
        this.balance = balance;
    }
 
      */
 
-   public int getID() {
-     return ID;
+   public int getId() {
+     return id;
     }
 
-    public void setID(int ID) {
-       this.ID = ID;
-        System.out.println("账户" + getID());
+    public void setId(int id) {
+        this.id = id;
+        System.out.println("账户" + getId());
     }
 
     public int getBalance() {
@@ -51,7 +56,7 @@ public class Account {
 
     public void deposit(int number2) {
         balance = number2;
-        System.out.println("本次操作成功，存入RMB" + "\n" + number2 + "元");
+        System.out.println("本次操作成功,存入RMB" + "\n" + number2 + "元");
     }
 }
 

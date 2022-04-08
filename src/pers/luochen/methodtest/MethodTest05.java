@@ -1,3 +1,8 @@
+/**
+ * @author: LiZhiHao
+ * @Date: 2022-02-28 15:47:42
+ * @LastEditTime: 2022-04-08 19:16:50
+ */
 package pers.luochen.methodtest;
 
 /**
@@ -18,7 +23,8 @@ public class MethodTest05 {
             int num2 = scanner.nextInt();
 
             int result = remove(num1, num2);
-            if (result > 5) {
+            int number = 5;
+            if (result > number) {
                 System.out.println(result + " 非常Good ");
             } else {
                 System.out.println("错了啊");
