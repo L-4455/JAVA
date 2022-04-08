@@ -1,7 +1,7 @@
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-08 20:05:26
- * @LastEditTime: 2022-04-08 21:24:13
+ * @LastEditTime: 2022-04-08 21:31:01
  */
 package pers.luochen.polymorphism;
 
@@ -19,10 +19,18 @@ public class Test01 {
          * 创建Cat对象
          */
         Cat cat = new Cat();
+        cat.zhua();
+        if(cat instanceof Cat){
+            System.out.println("cat引用的对象是Cat");
+        }else{
+            System.out.println("cat引用的对象不是Cat");
+        }
+
         /**
          * 创建Bird对象
          */
         Bird bird = new Bird();
+        bird.fly();
         /**
          * 创建Animal对象
          */
