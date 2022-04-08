@@ -14,11 +14,9 @@ public class MethodTest09 {
     public static int sumInt(int a , int b){
         int result1 = a + b;
         int num = 3;
-        int resValue = divide(result1,num);
-        return resValue;
+        return divide(result1,num);
     }
     public static int divide(int x, int y){
-        int resvalue = x / y;
-        return resvalue;
+        return x / y;
     }
 }
