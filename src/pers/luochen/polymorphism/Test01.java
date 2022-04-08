@@ -1,7 +1,7 @@
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-08 20:05:26
- * @LastEditTime: 2022-04-08 21:31:01
+ * @LastEditTime: 2022-04-08 22:21:11
  */
 package pers.luochen.polymorphism;
 
@@ -14,6 +14,8 @@ public class Test01 {
          * 1:向下转型最基本的条件是两个类之间有继承关系.
          * 2:什么时候使用强制类型转换?
          * 1:当需要调用子类中特有的方法或属性,需要进行强制类型转换,但强制类型转换存在隐患.
+         * 
+         * 
          */
         /**
          * 创建Cat对象
