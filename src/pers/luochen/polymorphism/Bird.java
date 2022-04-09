@@ -1,10 +1,10 @@
+package pers.luochen.polymorphism;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-07 22:20:21
  * @LastEditTime: 2022-04-08 20:51:30
  */
-package pers.luochen.polymorphism;
-
 
 public class Bird extends Animal {
 

@@ -27,7 +27,7 @@ public class Test03 {
         // owner.feed(she);
         owner.feed(new Dog());
         owner.feed(new Monkey());
-        owner.feed(new She());
+        owner.feed(new Snake());
         owner.feed(new Fish());
     }
 }
