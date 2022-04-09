@@ -6,5 +6,5 @@
 package pers.luochen.extendstest;
 
 public class Monkey extends Animal {
-    
+
 }
