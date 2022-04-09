@@ -1,4 +1,16 @@
 package pers.luochen.begin;
+
+/**
+ * @author: LiZhiHao
+ * @Date: 2021-05-27 21:55:56
+ * @LastEditTime: 2022-04-09 22:51:35
+ */
+public class Go {
+    public static void main(String[] args) {
+        System.out.println("HelloWorld");
+
+    }
+}
 /* public class pers.luochen.begin.Go {
  public static void main(String[] args) {
     System.out.println("\"HelloWord\"");

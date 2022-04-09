@@ -10,7 +10,7 @@ package pers.luochen.parameter;
  */
 public class StudentTest {
     public static void main(String[] args) {
-        Student e = new Student(20,"张三",20.1);
+        Student e = new Student(20, "张三", 20.1);
         System.out.println(e.getFraction());
         System.out.println(e.getName());
         System.out.println(e.getAge());

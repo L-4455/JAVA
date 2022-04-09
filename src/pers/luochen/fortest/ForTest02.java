@@ -1,26 +1,24 @@
+package pers.luochen.fortest;
+
+import pers.luochen.printf.Au;
+
+import java.util.Objects;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-25 19:10:04
  * @LastEditTime: 2022-04-06 21:13:12
  */
-package pers.luochen.fortest;
-
-import pers.luochen.a.Au;
-
-import java.util.Objects;
-
-/**
- * @author LiZhiHao
- * @date 2022/2/25 19:10
- */
 public class ForTest02 {
-    static String register = "register" ; static String  login = "login";
+    static String register = "register";
+    static String login = "login";
+
     public static void main(String[] args) {
         try (   /*
-                 *
-                 * for循环登录注册系统
-                 * */
-        java.util.Scanner scanner = new java.util.Scanner(System.in)) {
+         *
+         * for循环登录注册系统
+         * */
+                java.util.Scanner scanner = new java.util.Scanner(System.in)) {
             Au.q("请输入\"login\"/\"register\":");
             String logInRegister = scanner.next();
 
@@ -57,13 +55,13 @@ public class ForTest02 {
         }
 
         /*
-        *
-        *
-        *
-        * 以上代码未完成，待学的够多后在继续来完成次项目。
-        *
-        *
-        * */
+         *
+         *
+         *
+         * 以上代码未完成，待学的够多后在继续来完成次项目。
+         *
+         *
+         * */
     }
-    
+
 }

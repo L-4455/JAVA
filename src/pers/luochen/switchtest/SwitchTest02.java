@@ -1,13 +1,9 @@
+package pers.luochen.switchtest;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-24 19:10:29
  * @LastEditTime: 2022-03-29 20:24:42
- */
-package pers.luochen.switchtest;
-
-/**
- * @author LiZhiHao
- * @date 2022/2/24 19:10
  */
 public class SwitchTest02 {
     public static void main(String[] args) {

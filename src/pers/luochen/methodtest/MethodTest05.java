@@ -1,24 +1,25 @@
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-28 15:47:42
- * @LastEditTime: 2022-04-08 19:16:50
+ * @LastEditTime: 2022-04-09 23:13:05
  */
 package pers.luochen.methodtest;
 
 /**
- * @author LiZhiHao
- * @date 2022/2/28 15:47
+ * @author: LiZhiHao
+ * @Date: 2022-02-28 15:47:42
+ * @LastEditTime: 2022-04-08 19:16:50
  */
 public class MethodTest05 {
     public static void main(String[] args) {
         try (/*
-                 * 如果方法的返回值不为空时该怎么
-                 * 当方法有返回值类型时，需要用return 值;
-                 * 需求：求两个int类型的商，并返回给调用者。
-                 *
-                 * */
+         * 如果方法的返回值不为空时该怎么
+         * 当方法有返回值类型时，需要用return 值;
+         * 需求：求两个int类型的商，并返回给调用者。
+         *
+         * */
                 //boolean result = remove(10,2);
-        java.util.Scanner scanner = new java.util.Scanner(System.in)) {
+                java.util.Scanner scanner = new java.util.Scanner(System.in)) {
             int num1 = scanner.nextInt();
             int num2 = scanner.nextInt();
 
@@ -56,6 +57,6 @@ public class MethodTest05 {
          * */
         return num1 / num2;
     }
-    
+
 }
 

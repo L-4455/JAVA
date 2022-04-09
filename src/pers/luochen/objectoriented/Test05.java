@@ -1,8 +1,5 @@
-/**
- * @author: LiZhiHao
- * @Date: 2022-03-27 14:02:43
- * @LastEditTime: 2022-03-27 22:40:38
- */
+package pers.luochen.objectoriented;
+
 /*
  *                        _oo0oo_
  *                       o8888888o
@@ -22,19 +19,21 @@
  *          \  \ `_.   \_ __\ /__ _/   .-` /  /
  *      =====`-.____`.___ \_____/___.-`___.-'=====
  *                        `=---='
- * 
- * 
+ *
+ *
  *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * 
+ *
  *            佛祖保佑     永不宕机     永无BUG
  */
 
+/**
+ * @author: LiZhiHao
+ * @Date: 2022-03-27 14:02:43
+ * @LastEditTime: 2022-03-27 22:40:38
+ */
+public class Test05 {
 
-package pers.luochen.objectoriented;
-
-public class Ootest05 {
- 
-    public static void main(String [] args){
+    public static void main(String[] args) {
         Client c = new Client();
         //null
         System.out.println(c.name);
@@ -47,5 +46,5 @@ public class Ootest05 {
 
         //什么是实例相关数据？
         //实例相关数据表示：这个数据访问时必须有对象的参与。这种数据就是实例相关数据
-    } 
+    }
 }

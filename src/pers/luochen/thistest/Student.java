@@ -1,10 +1,10 @@
+package pers.luochen.thistest;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-04 23:36:44
  * @LastEditTime: 2022-04-06 17:53:14
  */
-package pers.luochen.thistest;
-
 public class Student {
     /**
      * 学生类
@@ -27,7 +27,7 @@ public class Student {
     // 有参数构造方法
     /*
      * public Student(int no, int age,String name){
-     * 
+     *
      * this.age = age;
      * this.no = no;
      * this.name = name;

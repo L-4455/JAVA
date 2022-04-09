@@ -1,9 +1,11 @@
 package pers.luochen.recursiontest;
 
-import java.util.*;
+import java.util.Date;
 
 /**
- * @author LiZhiHao
+ * @author: LiZhiHao
+ * @Date: 2022-03-18 22:14:03
+ * @LastEditTime: 2022-04-09 23:36:32
  */
 public class RecursionTest01 {
     public static void main(String[] args) {
@@ -21,7 +23,8 @@ public class RecursionTest01 {
         } */
         //doSome();
     }
-    public static void doSome(){
+
+    public static void doSome() {
         System.out.println("doSome begin");
         doSome();
         System.out.println("doSome over");

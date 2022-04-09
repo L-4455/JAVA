@@ -7,7 +7,7 @@ package pers.luochen.overridetest;
 
 public class Animal {
 
-    public void move(){
+    public void move() {
         System.out.println("动物在移动");
     }
 }

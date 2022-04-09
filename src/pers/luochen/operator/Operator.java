@@ -37,8 +37,8 @@ public class Operator {
         int a = 100;
         System.out.println("a1 = " + a++);
         /*
-        * 注意：这种情况中虽然a的输出值为100，但以后再次参加运算时a的值是为 101 的。
-        * */
+         * 注意：这种情况中虽然a的输出值为100，但以后再次参加运算时a的值是为 101 的。
+         * */
         System.out.println("a2 = " + ++a);
         /*
          * 在以上情况中，当++在变量名后时 a的值一直都是原值，其调用了io.PrintStream中的（Sting x）方法

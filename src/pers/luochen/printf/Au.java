@@ -4,7 +4,7 @@
  * @LastEditTime: 2022-03-27 22:41:52
  */
 
-package pers.luochen.a;
+package pers.luochen.printf;
 
 public class Au {
     public static void q(byte q) {

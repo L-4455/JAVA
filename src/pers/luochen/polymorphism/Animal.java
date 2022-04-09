@@ -6,7 +6,7 @@ package pers.luochen.polymorphism;
  * @LastEditTime: 2022-04-08 21:25:39
  */
 public class Animal {
-    public void move(){
+    public void move() {
         System.out.println("动物在移动");
     }
 }

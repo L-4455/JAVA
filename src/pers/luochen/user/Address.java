@@ -1,10 +1,10 @@
+package pers.luochen.user;
+
 /**
  * @author: LiZhiHao
  * @Date: 2021-05-27 21:55:56
  * @LastEditTime: 2022-04-06 17:55:20
  */
-package pers.luochen.user;
-
 public class Address {
     /**
      * 城市

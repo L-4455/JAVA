@@ -6,6 +6,6 @@
 package pers.luochen.extendstest;
 
 public class Cat extends Animal {
-    
-    
+
+
 }

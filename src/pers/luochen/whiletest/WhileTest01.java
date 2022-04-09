@@ -1,24 +1,20 @@
+package pers.luochen.whiletest;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-26 16:44:00
  * @LastEditTime: 2022-03-29 20:24:51
  */
-package pers.luochen.whiletest;
-
-/**
- * @author LiZhiHao
- * @date 2022/2/26 16:44
- */
 public class WhileTest01 {
     public static void main(String[] args) {
         /*
-        *
-        * while循环语法结构
-        * while(布尔表达式){
-        *   循环体;
-        * }
-        * while循环次数可能会为0也可能是N次。
-        * */
+         *
+         * while循环语法结构
+         * while(布尔表达式){
+         *   循环体;
+         * }
+         * while循环次数可能会为0也可能是N次。
+         * */
         int i = 1;
         while (i <= 10) {
             System.out.println(i);

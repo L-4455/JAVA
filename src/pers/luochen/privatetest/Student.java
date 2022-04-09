@@ -2,8 +2,8 @@ package pers.luochen.privatetest;
 /**
  * 封装的使用
  * 在需要封装的属性前加修饰符 private 代表私人的。
- * 
  */
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-02 17:32:27
@@ -19,38 +19,40 @@ public class Student {
     int age;
     /**
      * 加了封装的属性
-     */ 
+     */
     private int no;
     private String name;
 
-    /** 
+    /**
      * 提供get入口
      */
 
-    public int getNo(){
+    public int getNo() {
         // 语法错误，因为java有就近原则，此时的两个age指的都是形参中的age。并没有把传过来的age的值赋值给实例变量中保存
         return no;
     }
+
     /**
      * 提供set入口
      */
-    public void setNo(int a){
+    public void setNo(int a) {
         //在set入口是可以写逻辑业务的
         int number = 100000;
         int number1 = 0;
-        if(a > number || a < number1){
+        if (a > number || a < number1) {
             System.out.println("你的学号不正确");
             return;
-        }else{
+        } else {
             no = a;
         }
-        
+
     }
-    
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public void setName(String b){
+
+    public void setName(String b) {
         name = b;
     }
 }

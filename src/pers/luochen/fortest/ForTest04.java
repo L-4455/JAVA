@@ -1,13 +1,9 @@
+package pers.luochen.fortest;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-26 14:36:07
  * @LastEditTime: 2022-04-06 21:15:26
- */
-package pers.luochen.fortest;
-
-/**
- * @author LiZhiHao
- * @date 2022/2/26 14:36
  */
 public class ForTest04 {
     public static void main(String[] args) {
@@ -17,7 +13,7 @@ public class ForTest04 {
          * 素数：只能被1和自身整除，不能被其他数整除的数叫做素数或质素。
          *
          * */
-        int number2 = 2 , number100 = 100;
+        int number2 = 2, number100 = 100;
         for (int num = number2; num <= number100; num++) {
             boolean judge = true;
             for (int num1 = 2; num1 < num; num1++) {

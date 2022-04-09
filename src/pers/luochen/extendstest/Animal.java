@@ -11,10 +11,10 @@ public class Animal {
      */
     private String name = "long";
 
-    
-    public void doSome(){
+
+    public void doSome() {
         System.out.println("动物在移动");
         System.out.println(this.name);
     }
-    
+
 }

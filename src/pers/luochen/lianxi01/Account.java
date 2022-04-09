@@ -8,10 +8,6 @@ package pers.luochen.lianxi01;
 /*
  * 需求：创建一个Account的类，属性有：id，balance
  * */
-
-/**
- * @author LiZhiHao
- */
 public class Account {
     private int id;
     private int balance;
@@ -24,11 +20,10 @@ public class Account {
         this.id = id;
        this.balance = balance;
    }
-
      */
 
-   public int getId() {
-     return id;
+    public int getId() {
+        return id;
     }
 
     public void setId(int id) {
@@ -49,7 +44,7 @@ public class Account {
         if (balance < number1) {
             System.out.println("你的余额不足,取钱失败");
         } else if (balance > number1) {
-            System.out.println("本次操作成功" + "\n" + "成功取出：" + number1 +"元");
+            System.out.println("本次操作成功" + "\n" + "成功取出：" + number1 + "元");
             //System.out.println("余额："+ balance - number1);
         }
     }

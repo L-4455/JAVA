@@ -10,6 +10,7 @@ public class Customer {
     public Customer() {
 
     }
+
     public Customer(String name) {
         this.name = name;
 
@@ -23,8 +24,6 @@ public class Customer {
         this.name = name;
         System.out.println("姓名:" + getName());
     }
-
-
 
 
 }

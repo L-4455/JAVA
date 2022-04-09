@@ -1,14 +1,14 @@
+package pers.luochen.objectoriented;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-03-26 16:00:56
  * @LastEditTime: 2022-03-27 22:41:03
  */
-package pers.luochen.objectoriented;
+public class Test01 {
+    public static void main(String[] args) {
 
-public class Ootset01 {
-    public static void main(String [] args){
-
-        /**
+        /*
          * 对象的创建与使用
          * 想要访问Student类体中的对象，需要先创建对象
          * 创建对象的语法为：new 类名();
@@ -24,18 +24,18 @@ public class Ootset01 {
         //因为Student是一个引用数据类型，所以需要Student 变量名 = new Student();来保存数据。
 
         Student s = new Student();
-        
+
         //对于对象中的实例变量又两种访问形式
         //读取数据：变量名.属性名
         //修改数据: 变量名.属性名 = 值;
 
-        
+
         int stNo = s.no;
         int stAge = s.age;
         String stName = s.name;
         String stAdder = s.adder;
         boolean stSex = s.sex;
-        
+
         System.out.println("学号-->" + stNo);
         System.out.println("年龄-->" + stAge);
         System.out.println("姓名-->" + stName);

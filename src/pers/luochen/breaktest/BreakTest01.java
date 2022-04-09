@@ -1,10 +1,10 @@
+package pers.luochen.breaktest;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-26 19:23:24
  * @LastEditTime: 2022-04-06 18:15:36
  */
-package pers.luochen.breaktest;
-
 public class BreakTest01 {
     public static void main(String[] args) {
         /*
@@ -18,7 +18,7 @@ public class BreakTest01 {
          * break的语法是：break;
          * break;就是一条完整的java语句。
          * */
-        int number = 0 ,number1 = 10;
+        int number = 0, number1 = 10;
         for (int i = number; i <= number1; i++) {
             if (i == 5) {
                 break;

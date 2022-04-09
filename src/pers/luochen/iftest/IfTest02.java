@@ -1,13 +1,16 @@
 package pers.luochen.iftest;
 
 /**
- * @author LiZhiHao
- * @date 2022/2/24 14:25
+ * @author: LiZhiHao
+ * @Date: 2022-04-06 00:09:28
+ * @LastEditTime: 2022-04-09 23:06:32
  */
+
+
 public class IfTest02 {
     public static void main(String[] args) {
         try (//创建键盘扫描器
-        java.util.Scanner w = new java.util.Scanner(System.in)) {
+             java.util.Scanner w = new java.util.Scanner(System.in)) {
             //接受用户输入
             System.out.print("请输入年龄:");
             int age = w.nextInt();

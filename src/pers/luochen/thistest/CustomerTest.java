@@ -1,12 +1,12 @@
+package pers.luochen.thistest;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-04 22:42:15
  * @LastEditTime: 2022-04-04 23:31:59
  */
-package pers.luochen.thistest;
-
 public class CustomerTest {
-    public static void main(String [] args){
+    public static void main(String[] args) {
 
         /**
          * 测试类
@@ -27,5 +27,5 @@ public class CustomerTest {
         Customer.doOther();
 
     }
-    
+
 }

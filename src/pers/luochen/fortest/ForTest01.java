@@ -1,12 +1,13 @@
+package pers.luochen.fortest;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-25 14:32:53
  * @LastEditTime: 2022-04-06 20:58:57
  */
-package pers.luochen.fortest;
-
 public class ForTest01 {
-    static int number0 = 0 , number1 = 1 , number2 = 2 , number3 =3 ,number10 = 10, number100 = 100;
+    static int number0 = 0, number1 = 1, number2 = 2, number3 = 3, number10 = 10, number100 = 100;
+
     public static void main(String[] args) {
         /*
          *
@@ -39,7 +40,7 @@ public class ForTest01 {
             System.out.println(i);
         }
         System.out.println("----------------------------");
-        for (int i = number2; i <= number10 ; i += number2) {
+        for (int i = number2; i <= number10; i += number2) {
             System.out.println("i---->" + i);
             //1-10的偶数
         }

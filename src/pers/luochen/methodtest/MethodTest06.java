@@ -1,9 +1,17 @@
 package pers.luochen.methodtest;
+/**
+ * @author: LiZhiHao
+ * @Date: 2022-02-28 16:16:20
+ * @LastEditTime: 2022-04-09 23:13:10
+ */
 
 /**
- * @author LiZhiHao
- * @date 2022/2/28 16:16
+ * @author: LiZhiHao
+ * @Date: 2022-02-28 16:16:20
+ * @LastEditTime: 2022-04-09 23:13:09
  */
+
+
 public class MethodTest06 {
     public static void main(String[] args) {
         /*

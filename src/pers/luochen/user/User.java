@@ -1,18 +1,18 @@
-
 package pers.luochen.user;
 
 /**
-public class User {
-    //用户名
-    String name;
-    //用户编号
-    int number;
-    //用户性别
-    boolean sex;
-    //用户住址
-    Address addr;
-}
-*/
+ * public class User {
+ * //用户名
+ * String name;
+ * //用户编号
+ * int number;
+ * //用户性别
+ * boolean sex;
+ * //用户住址
+ * Address addr;
+ * }
+ */
+
 /**
  * @author: LiZhiHao
  * @Date: 2021-05-27 21:55:56
@@ -26,6 +26,13 @@ public class User {
     boolean sex;
 
     /**
+     * get
+     */
+    public int getAge() {
+        return age;
+    }
+
+    /**
      * set
      */
     public void setAge(int age1) {
@@ -36,12 +43,5 @@ public class User {
             return;
         }
         age = age1;
-    }
-
-    /**
-     * get
-     */
-    public int getAge() {
-        return age;
     }
 }

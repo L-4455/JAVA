@@ -1,12 +1,12 @@
+package pers.luochen.user;
+
 /**
  * @author: LiZhiHao
  * @Date: 2021-05-27 21:55:56
  * @LastEditTime: 2022-04-08 19:17:54
  */
-package pers.luochen.user;
 
-
-import pers.luochen.a.*;
+import pers.luochen.printf.Au;
 
 public class UserTest {
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class UserTest {
         w.sex = false;
         w.number = 1000;
         w.sex = true;
-        
+
         w.addr = new Address();
         w.addr.city = "漯河";
         w.addr.address = "召陵区";
@@ -26,15 +26,15 @@ public class UserTest {
         Au.q(w.addr.address);
         Au.q(w.addr.city);
         Au.q(w.addr.zipCode);
-        
+
         User user = new User();
         user.setAge(-111);
         System.out.println(w.getAge());
 
         UserTest.doSome();
     }
-   
-    public static void doSome(){
+
+    public static void doSome() {
         System.out.println("我是你爹");
     }
 }

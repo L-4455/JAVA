@@ -5,7 +5,7 @@
  */
 package pers.luochen.polymorphism;
 
-public class Fish extends Pet{
+public class Fish extends Pet {
 
     @Override
     public void eat() {

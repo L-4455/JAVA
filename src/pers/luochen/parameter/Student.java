@@ -10,13 +10,14 @@ public class Student {
     private String name;
     private double fraction;
 
-    public Student(){
+    public Student() {
         System.out.println(" The world is changing. We should be happy in time. ");
         System.out.println(" Never let anything stop you from pursuing your dreams, " +
                 "from living or falling in love ");
     }
+
     public Student(int s, String w, double q) {
-        age= s;
+        age = s;
         name = w;
         fraction = q;
 
@@ -26,19 +27,20 @@ public class Student {
         return age;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public double getFraction() {
-        return fraction;
-    }
     public void setAge(int age) {
         this.age = age;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getFraction() {
+        return fraction;
     }
 
     public void setFraction(double fraction) {

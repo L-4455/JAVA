@@ -1,14 +1,14 @@
+package pers.luochen.constructortest;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-04 22:01:02
  * @LastEditTime: 2022-04-06 18:21:53
  */
-package pers.luochen.constructortest;
-
 public class Test0102 {
     public static void main(String[] args) {
-        /**
-         * 
+        /*
+         *
          * 输出9*9表
          * 1×1=1
          * 1×2=2 2×2=4
@@ -24,7 +24,6 @@ public class Test0102 {
         for (int i = number; i <= number1; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + "x" + i + "=" + i * j + "\t");
-                // System.out.print(j+"×"+i+"="+i*j+"\t");
             }
             System.out.println();
         }

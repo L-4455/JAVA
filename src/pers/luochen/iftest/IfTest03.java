@@ -1,17 +1,13 @@
+package pers.luochen.iftest;
+
+import pers.luochen.printf.Au;
+
+import java.util.Objects;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-24 14:48:27
  * @LastEditTime: 2022-03-29 20:23:13
- */
-package pers.luochen.iftest;
-
-import pers.luochen.a.Au;
-//导入Java中util工具类中的Objects
-import java.util.Objects;
-
-/**
- * @author LiZhiHao
- * @date 2022/2/24 14:48
  */
 public class IfTest03 {
     public static void main(String[] args) {

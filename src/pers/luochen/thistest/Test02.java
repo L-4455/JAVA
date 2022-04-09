@@ -1,10 +1,10 @@
+package pers.luochen.thistest;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-04-05 23:10:16
  * @LastEditTime: 2022-04-06 17:54:46
  */
-package pers.luochen.thistest;
-
 public class Test02 {
     public static void main(String[] args) {
         Test02 test02 = new Test02();
@@ -19,12 +19,14 @@ public class Test02 {
         //test02.doOther();
 
         System.out.println("我执行了,没有报错空指针异常");
-        
+
     }
-    public static void doOther(){
+
+    public static void doOther() {
         System.out.println("开始");
     }
-    public void doSome(){
+
+    public void doSome() {
         System.out.println("do Some");
     }
 }

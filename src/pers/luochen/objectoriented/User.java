@@ -11,10 +11,10 @@ public class User {
      * 用户编号
      * 用户姓名
      * 用户性别
-     * 用户住址 
+     * 用户住址
      */
     int no;
     String name;
-    boolean sex;    
+    boolean sex;
     Adders addr;
 }

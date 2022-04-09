@@ -1,13 +1,9 @@
+package pers.luochen.switchtest;
+
 /**
  * @author: LiZhiHao
  * @Date: 2022-02-24 18:39:46
  * @LastEditTime: 2022-04-06 21:03:45
- */
-package pers.luochen.switchtest;
-
-/**
- * @author LiZhiHao
- * @date 2022/2/24 18:39
  */
 public class SwitchTest01 {
     public static void main(String[] args) {
@@ -55,9 +51,9 @@ public class SwitchTest01 {
                 System.out.println("account");
         }
         char t = 'A';
-        switch(t){
+        switch (t) {
             //char类型或自动转换为int类型,shot,byte类型也是。
-            case 'A' :
+            case 'A':
                 System.out.println("userName");
                 break;
             case 'B':
@@ -69,7 +65,7 @@ public class SwitchTest01 {
 
         //case穿透
         int week = 2;
-        switch(week){
+        switch (week) {
             case 1:
                 System.out.println("周一");
                 break;
@@ -96,16 +92,16 @@ public class SwitchTest01 {
         }
         //case合并
         /*
-        * 当case合并时，只要有一个值可以与表达式的值匹配成功就可以执行下面的java语句。
-        * */
+         * 当case合并时，只要有一个值可以与表达式的值匹配成功就可以执行下面的java语句。
+         * */
         int w = 6;
 
-        switch(w){
-            case 5: 
-            case 6: 
+        switch (w) {
+            case 5:
+            case 6:
             case 7:
                 System.out.println("今天是黑色星期五");
-            break;
+                break;
             default:
         }
     }

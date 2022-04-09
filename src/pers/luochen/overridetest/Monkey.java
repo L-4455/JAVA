@@ -13,5 +13,5 @@ public class Monkey extends Animal {
     @Override
     public void move() {
         System.out.println("猴子在走猴步");
-    }    
+    }
 }

@@ -11,13 +11,16 @@ public class Test {
         add(u);
         System.out.println("main--->" + u.i);
     }
-    public static void add(User u){
-      u.i++;
-      System.out.println("add---->" + u.i);
+
+    public static void add(User u) {
+        u.i++;
+        System.out.println("add---->" + u.i);
     }
 }
-class User{
+
+class User {
     int i;
+
     public User(int age) {
         i = age;
     }
