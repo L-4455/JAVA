@@ -1,10 +1,13 @@
 package pers.luochen.finaltest;
 
+
 /**
  * @author LiZhiHao
  * @date 2022/4/11/0011 21:35
  */
 public class FinalTest {
+
+
 
     /**
      *  final int number;
@@ -40,6 +43,7 @@ public class FinalTest {
      * }
      */
     public static void main(String[] args) {
+
         /*
          * final意为:最终的,不可变的.
          * final修饰的变量无法继承.
@@ -65,6 +69,10 @@ public class FinalTest {
          */
         System.out.println("LITCHI的国籍是" + Chinese.GUO_JI);
         System.out.println("圆周率:" + Chinese.PI);
+        
+        for(int i = 1; i <= 9999999; i++){
+            System.out.println(i);
+        }
     }
 }
 
