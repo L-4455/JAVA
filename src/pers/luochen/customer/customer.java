@@ -3,14 +3,14 @@ package pers.luochen.customer;
 /**
  * @author LiZhiHao
  */
-public class Customer {
+public class customer {
 
     String name;
 
     /**
      * 无参构造方法
      */
-    public Customer() {
+    public customer() {
 
     }
 

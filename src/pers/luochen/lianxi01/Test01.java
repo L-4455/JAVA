@@ -17,7 +17,7 @@ public class Test01 {
         animal2.doSome();
         //animal2.doOther();
 
-        /**
+        /*
          * 强制类型转换,父类转为子类,调用子类特有的方法.
          */
         Cat cat2 = (Cat)animal2;
