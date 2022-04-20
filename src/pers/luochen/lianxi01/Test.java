@@ -11,8 +11,8 @@ public class Test {
         for (int num = 2; num <= 100; num++) {
             boolean wode = true;
             for (int number = 2; number < num; number++) {
-                if(num % number == 0){
-                    wode =false;
+                if (num % number == 0) {
+                    wode = false;
                     retValue += num;
                     break;
                 }
