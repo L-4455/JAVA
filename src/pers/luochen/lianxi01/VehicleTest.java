@@ -14,7 +14,7 @@ public class VehicleTest {
 
         System.out.println("size: " + vehicle.getSize() + "\n" + "最初sped: " + vehicle.getSped());
 //      调用加速方法
-        vehicle.spedUp(10);
+        vehicle.spedUp(-10);
         System.out.println("加速后sped: " + vehicle.getSped());
 //      调用加速方法
         vehicle.spedUp(20);
