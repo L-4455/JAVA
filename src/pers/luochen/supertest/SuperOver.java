@@ -18,7 +18,7 @@ public class SuperOver {
      * <p>
      * super.属性名             [访问父类属性]
      * super.方法名(实际参数);   [访问父类方法]
-     * super(实际参数)          [调用父类方法]
+     * super(实际参数)          [调用父类构造方法]
      * super()只能出现在构造方法的第一行,目的是通过当前构造方法调用父类中的构造方法,目的是:创建子类对象时,先初始化父类属性特征.
      */
     public static void main(String[] args) {
