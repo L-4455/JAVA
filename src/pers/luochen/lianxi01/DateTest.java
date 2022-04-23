@@ -27,7 +27,7 @@ public class DateTest {
         /*调用MyTime中的方法来减时间*/
         mytime.subHour(1);
         mytime.subMinute(21);
-        mytime.subSecond(50);
+        mytime.subSecond(5);
         /*使用MyTime中的display方法打印时间信息*/
         mytime.display("减少后时间信息: ");
 
@@ -118,10 +118,7 @@ class MyTime {
 
     /*减少"秒"时间*/
     public void subSecond(int second) {
-        if ((this.getSecond() - second) < 0) {
-            System.out.println("减秒错误");
-            return;
-        }
+
         if (second < 0) {
             System.out.println("减少\"秒\"时间错误,请正确输入.");
             return;
