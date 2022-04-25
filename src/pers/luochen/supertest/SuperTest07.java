@@ -20,7 +20,6 @@ public class SuperTest07 {
     }
 
     public void doSome() {
-        String name;
 
         System.out.println(this);
         //java: 需要'.' super后需要跟.

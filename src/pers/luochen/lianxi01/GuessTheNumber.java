@@ -9,16 +9,17 @@ public class GuessTheNumber {
             猜数字游戏,这里的数字先由用户自定义.不使用随机数.
      */
     public static void main(String[] args) {
-        A a = new A(100);
+        A a = new A(88);
         B b = new B(a);
-        java.util.Scanner scanner = new java.util.Scanner(System.in);
-
-        while (true) {
-            System.out.print("请输入一个数字:");
-            int number = scanner.nextInt();
-            b.cai(number);
+        try (java.util.Scanner scanner = new java.util.Scanner(System.in)) {
+            while (true) {
+                System.out.print("请输入一个数字:");
+                int number = scanner.nextInt();
+                b.cai(number);
+            }
         }
     }
+
 }
 
 class A {
@@ -62,13 +63,13 @@ class B {
 
     public void cai(int num) {
         //实际数字
-        int shijishu = a.getI();
-        if (num == shijishu) {
+        int hashish = a.getI();
+        if (num == hashish) {
             System.out.println("猜对了");
             System.exit(0);
-        } else if (num < shijishu) {
+        } else if (num < hashish) {
             System.out.println("猜小了");
-        } else if (num > shijishu) {
+        } else if (num > hashish) {
             System.out.println("猜大了");
         }
     }
