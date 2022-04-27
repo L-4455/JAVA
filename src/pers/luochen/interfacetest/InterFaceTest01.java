@@ -15,7 +15,12 @@ package pers.luochen.interfacetest;
         5:接口中常量的:public static final可以省略.
         6:接口中抽象方法:public abstract可以省略.
         7:接口与接口可以多继承.
-        8:重点:当一个类实现接口时,需要要同时实现接口中的所有方法.
+        8:接口中的所有元素都是public修饰的.
+        9:重点:当一个非抽象类实现接口时,需要要同时实现接口中的所有方法.
+        10:一个非抽象类可以继承多个接口,但要实现接口所有的方法.
+        11:extends和implements同时使用时extends在前.
+        12:接口中的方法不能有方法.
+        13:在使用接口时,可以使用多态机制.
  */
 public class InterFaceTest01 {
     public static void main(String []args){
