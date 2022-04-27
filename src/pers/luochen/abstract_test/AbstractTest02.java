@@ -19,6 +19,9 @@ public class AbstractTest02 {
         Animal animal1 = new Monkey();
         animal1.move();
 
+        Animal animal2 = new Bird();
+        animal2.move();
+
 
     }
 }
@@ -56,4 +59,11 @@ class Monkey extends Animal {
     public void move() {
         System.out.println("猴子在笑");
     }
+}
+
+class Bird extends Animal{
+	public void move(){
+        System.out.println("鸟儿在吃食物");
+		System.out.println("鸟儿在飞翔");
+	}
 }
