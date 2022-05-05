@@ -1,4 +1,4 @@
-package pers.luochen.interfacetest;
+package pers.luochen.interfacetest.Food;
 
 /**
  * @Author LiZiHao
