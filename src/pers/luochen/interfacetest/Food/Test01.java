@@ -1,4 +1,7 @@
-package pers.luochen.interfacetest;
+package pers.luochen.interfacetest.Food;
+
+import pers.luochen.interfacetest.Food.Customer;
+import pers.luochen.interfacetest.Food.Food;
 
 /**
  * @Author LiZiHao
