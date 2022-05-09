@@ -18,6 +18,7 @@ public class Test03 {
 
         System.out.println(user.weight);
         System.out.println(user.weight);
+        System.out.println(user.weight);
         /*name在访问控制权限.User中不是公共的; 无法从外部程序包中对其进行访问
         System.out.println(user.name);*/
     }
