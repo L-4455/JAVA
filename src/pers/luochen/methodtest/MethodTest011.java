@@ -8,7 +8,7 @@ package pers.luochen.methodtest;
 public class MethodTest011 {
 
     public static void main(String[] args) {
-        Print.au("aaa");
+        Print.au("类型之间的关系.txt");
         Print.au(100);
         Print.au(30);
         Print.au(20.1);
