@@ -1,6 +1,6 @@
-package 访问控制权限.默认的;
+package pers.luochen.访问控制权限.默认的;
 
-import 访问控制权限.User;
+import pers.luochen.访问控制权限.User;
 
 /**
  * @Author LiZiHao
@@ -10,10 +10,10 @@ public class Test03 {
     public static void main(String[] args) {
         User user = new User();
 
-        /*age 在 访问控制权限.User 中是 private 访问控制
+        /*age 在 pers.luochen.访问控制权限.User 中是 private 访问控制
         System.out.println(user.age);*/
 
-        /*id 在 访问控制权限.User 中是 protected 访问控制
+        /*id 在 pers.luochen.访问控制权限.User 中是 protected 访问控制
         System.out.println(user.id);*/
 
         System.out.println(user.weight);

@@ -1,6 +1,6 @@
-package 访问控制权限.默认的;
+package pers.luochen.访问控制权限.默认的;
 
-import 访问控制权限.User;
+import pers.luochen.访问控制权限.User;
 
 /**
  * @Author LiZiHao
