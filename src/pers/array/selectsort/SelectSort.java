@@ -64,31 +64,31 @@ public class SelectSort {
 
 
      */
-    public static void main(String[] args) {
-        int[] array = {8, 65, 17, 268, 148, 88};
-        for (int i = 0; i < array.length - 1; i++) {
+    public static void main(String[] args){
+        int[] array = {8,65,17,268,148,88};
+        for(int i = 0;i < array.length - 1;i++){
 //            System.out.println(i);
 //            i的值为:0 1 2 3 4
 //            外层控制循环次数.
 //            i的值刚好也是这一堆数据中最小元素的下标;
-            for (int j = i + 1; j < array.length; j++) {
+         for(int j = i+1;j < array.length;j++){
 //             System.out.println("====>" +j);
-                int min = i;
-                if (array[j] < array[min]) {
-                    min = j;
-                }
-                if (min != i) {
+             int min = i;
+             if(array[j] < array[min]){
+                 min = j;
+             }
+             if(min != i){
 //                 表示存在最小数据
 //                 array[min]最小值
 //                 array[i]最左边的数据;
-                    int temp;
-                    temp = array[min];
-                    array[min] = array[i];
-                    array[i] = temp;
-                }
+                 int temp;
+                 temp = array[min];
+                 array[min] = array[i];
+                 array[i] = temp;
+             }
             }
         }
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length ; i++) {
             System.out.println(array[i]);
         }
     }

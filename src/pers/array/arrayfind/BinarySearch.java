@@ -17,26 +17,25 @@ public class BinarySearch {
             直到中间值为目标值,或则是中间值下标等于目标值
      */
 
-    public static void main(String[] args) {
-        int[] array = {10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+    public static void main(String[] args){
+        int[] array = {10,11,12,13,14,15,16,17,18,19,20};
 
-        int index = binarysearch(array, 17);
+        int index = binarysearch(array,17);
         System.out.println(index == -1 ? "该元素不存在" : array[index] + "元素的下标为:" + index);
 
     }
 
     /**
      * 二分法查找目标值
-     *
      * @param array 被查找数组
-     * @param ele   被查找元素
+     * @param ele 被查找元素
      * @return -1表示该元素不存在
      */
     public static int binarysearch(int[] array, int ele) {
         int begin = 0;
         int end = array.length - 1;
 
-        while (begin <= end) {
+        while(begin <= end) {
             int mid = (begin + end) / 2;
             if (array[mid] == ele) {
                 return mid;
@@ -46,6 +45,6 @@ public class BinarySearch {
                 end = mid - 1;
             }
         }
-        return -1;
+        return - 1;
     }
 }
