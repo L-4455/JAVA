@@ -141,6 +141,11 @@ public class StringTest06 {
         String s3 = String.valueOf(false);
         System.out.println(s);
         System.out.println(s3);
+
+        String s4 = String.valueOf(new User());
+        System.out.println(s4);
+
+
     }
 }
 class User{
