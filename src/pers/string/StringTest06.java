@@ -141,13 +141,20 @@ public class StringTest06 {
         String s3 = String.valueOf(false);
         System.out.println(s);
         System.out.println(s3);
+        User user = new User();
+        System.out.println(String.valueOf(user));
 
-        String s4 = String.valueOf(new User());
-        System.out.println(s4);
+        /*
+            事实上在控制台输出的任何语句都会先转换为字符串在输出.
+            valueOf调用了toString方法.
+         */
 
 
     }
 }
 class User{
-
+    @Override
+    public String toString() {
+        return "调用了toString";
+    }
 }
