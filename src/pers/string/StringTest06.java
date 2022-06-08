@@ -99,5 +99,50 @@ public class StringTest06 {
 //          测试此字符串是否以指定的前缀开头。
         System.out.println("asljfwejr".startsWith("s"));
         System.out.println("asljfwejr".startsWith("a"));
+
+//        15.toCharArray()
+//          把一个字符串转换为char数组
+        char[] chars = "我是你爹".toCharArray();
+        for(int i = 0;i < chars.length;i++){
+            System.out.println(chars[i]);
+        }
+
+//        16.toLowerCase()
+//            把这个字符串转换为小写
+        System.out.println("AFDFWQRSF".toLowerCase());
+        System.out.println("SDFSDsdfsdfsd".toLowerCase());
+
+//        17.toUpperCase()
+//          把这个字符串转换为大写
+        System.out.println("woehsdnflsfpwhefalglskdjf".toUpperCase());
+        System.out.println("gjskdnfnvsjowueriw".toUpperCase());
+
+//        18.substring(int beginIndex)
+//         截取字符串从开始下标截取
+        System.out.println("dfqweasdf".substring(3));
+
+//        19.substring(int beginIndex , int endIndex)
+//            截取字符串从开始下标到结束下标
+        System.out.println("www.baidu.com".substring(0,3));
+        /*
+            开始下标包括这个元素
+            结束下标不包括这个元素
+            beginIndex - 开始索引，包括在内。
+            endIndex - 结束索引，不包括在内。
+         */
+
+//        20.trim();
+//            去除字符串前空白和后空白,中间的去不了.
+        System.out.println("          我是   你爹      ".trim());
+
+//        21.valueOf();静态方法
+//          把不是字符串的数据转换字符串
+        String s = String.valueOf(2);
+        String s3 = String.valueOf(false);
+        System.out.println(s);
+        System.out.println(s3);
     }
+}
+class User{
+
 }
