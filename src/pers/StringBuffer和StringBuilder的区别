@@ -1,0 +1,4 @@
+StringBuffer和StringBuilder都是作为字符串拼接的类,都可以用来字符串拼接.
+
+StringBuffer类中的方法是用synchronized关键字修饰的,说明了该类是有线程安全的.
+StringBuilder类中的方法没有使用synchronized修饰,说明了该类在多线程中是不安全的.

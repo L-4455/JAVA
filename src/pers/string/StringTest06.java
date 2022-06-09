@@ -148,8 +148,6 @@ public class StringTest06 {
             事实上在控制台输出的任何语句都会先转换为字符串在输出.
             valueOf调用了toString方法.
          */
-
-
     }
 }
 class User{
