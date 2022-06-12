@@ -92,8 +92,8 @@ public class Hotel {
     public void printRoom() {
         for (int i = 0; i < rooms.length; i++) {
             for (int j = 0; j < rooms[i].length; j++) {
-                Room room = rooms[i][j];
-                System.out.print(room);
+//                Room room = rooms[i][j];
+                System.out.print(rooms[i][j]);
             }
             System.out.println();
         }
@@ -107,7 +107,8 @@ public class Hotel {
     public void orderRoom(int roomNo) {
         for (int i = 0; i < rooms.length; i++) {
             for (int j = 0; j < rooms[i].length; j++) {
-                if (((roomNo / 100) - 1) < rooms.length && ((roomNo % 100) - 1) < rooms[i].length) {
+//              判断roomNo是否在Room[][]范围内,当roomNo取值为1-6时会出现下标越界异常.
+                if (((roomNo / 100) - 1) < rooms.length && ((roomNo % 100) - 1) < rooms[i].length && roomNo > 6) {
                     Room room = rooms[(roomNo / 100) - 1][(roomNo % 100) - 1];
                     if (room.getState()) {
                         room.setState(false);
@@ -121,7 +122,6 @@ public class Hotel {
                 return;
             }
         }
-
     }
 
     /**
@@ -132,7 +132,8 @@ public class Hotel {
     public void exitRoom(int roomNo) {
         for (int i = 0; i < rooms.length; i++) {
             for (int j = 0; j < rooms[i].length; j++) {
-                if (((roomNo / 100) - 1 < rooms.length) && (roomNo % 100) - 1 < rooms[i].length) {
+//                判断roomNo是否在Room[][]范围内,当roomNo取值为1-6时会出现下标越界异常.
+                if (((roomNo / 100) - 1 < rooms.length) && (roomNo % 100) - 1 < rooms[i].length && roomNo > 6) {
                     Room room = rooms[(roomNo / 100) - 1][(roomNo % 100) - 1];
                     if (!room.getState()) {
                         room.setState(true);
