@@ -11,7 +11,7 @@ public class ExceptionTest01 {
         异常,就是当程序不符合逻辑或者规则时发生的异常.
         比如说除数为0
 
-        异常是类,异常可以创建对象,可以通过构造方法实例化对象.
+        异常是类,异常可以创建对象.
      */
     public static void main(String[] args) {
         NullPointerException exception = new NullPointerException("空指针异常");
