@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 */
 
+
 /**
  * @Author LiZiHao
  * @Date 2022/6/24/17:13
@@ -22,6 +23,8 @@ public class ExceptionTest07 {
      */
 
     public static void main(String[] args) {
+
+    }
         /*
         多重catch
         try {
@@ -66,4 +69,4 @@ public class ExceptionTest07 {
         }
         */
     }
-}
+
