@@ -7,5 +7,7 @@ package pers.exception.work.d2;
 public class sdfa {
     public static void main(String[] args) {
         System.out.println("HelloWrold");
+
+        System.out.println("ssss");
     }
 }
