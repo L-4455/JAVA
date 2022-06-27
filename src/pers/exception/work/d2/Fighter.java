@@ -4,7 +4,7 @@ package pers.exception.work.d2;
  * @Author LiZiHao
  * @Date 2022/6/26/16:27
  */
-public class Fighter extends Weapon implements Moveable, Shotable {
+public class Fighter extends Weapon implements Movable, Shotable {
 
     private final String name = "战斗机";
 

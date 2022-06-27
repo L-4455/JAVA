@@ -24,6 +24,6 @@ public class Test {
 //            e.printStackTrace();
         }
         army.moveAll();
-        army.shotall();
+        army.should();
     }
 }

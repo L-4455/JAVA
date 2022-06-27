@@ -31,14 +31,14 @@ public class Army {
 
     public void moveAll() {
         for (int i = 0; i < weapons.length; i++) {
-            if (weapons[i] instanceof Moveable) {
-                Moveable moveable = (Moveable) weapons[i];
-                moveable.move();
+            if (weapons[i] instanceof Movable) {
+                Movable movable = (Movable) weapons[i];
+                movable.move();
             }
         }
     }
 
-    public void shotall() {
+    public void should() {
         for (int i = 0; i < weapons.length; i++) {
             if (weapons[i] instanceof Shotable) {
                 Shotable shotable = (Shotable) weapons[i];
