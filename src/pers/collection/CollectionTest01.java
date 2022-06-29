@@ -12,6 +12,8 @@ public class CollectionTest01 {
         collection集合
 
         collection集合是list和set集合的父接口,collection有的方法他两个也有.
+        Collection集合在没有使用泛型之前是可以存放任何Object类的所有子类
+        使用泛型之后只能存储具体特定的数据类型.
         集合里无法直接存储基本数类型和java对象,存进去的都是java对象的内存地址.
         即使直接填100也是java使用了自动装箱机制.
         常用方法:
