@@ -30,7 +30,12 @@ public class CollectionTest03 {
 //        ArrayList集合的元素是有序的可重复的.
 //        有序:存进去和取出来的顺序相同.可以存放相同的元素
         while (it.hasNext()) {
-            System.out.println(it.next());
+//            添加到集合的元素是什么类型取出来还是什么类型
+            Object af = it.next();
+            if (af instanceof Integer) {
+                System.out.println("Integer类型");
+            }
+            System.out.println(af);
         }
         System.out.println("******************************");
 //        创建集合对象

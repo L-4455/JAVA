@@ -8,6 +8,11 @@ import java.util.Collection;
  * @Date 2022/6/29/17:17
  */
 public class CollectionTest05 {
+    /*
+        Collection中的contains
+        contains的判断是调用了equals
+        总结:在自定义类添加到了集合里.要重写equals
+     */
     public static void main(String[] args) {
         Collection c = new ArrayList();
         User b1 = new User("哈哈");
@@ -27,6 +32,14 @@ public class CollectionTest05 {
 //        重写equals后:true
         System.out.println(c.contains(b2));
 
+//        创建集合对象
+        Collection c1 = new ArrayList();
+//        int的包装类
+        Integer it = new Integer(100);
+        Integer av = new Integer(100);
+        c1.add(it);
+//        int的包装类进行判断,也是判断的内容,不是内存地址.
+        System.out.println(c1.contains(av));
 
     }
 }
