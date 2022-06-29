@@ -5,7 +5,7 @@ package pers.exception.work.d2;
  * @Date 2022/6/26/15:11
  */
 public class Army {
-    private Weapon[] weapons;
+    private final Weapon[] weapons;
 
     //    有参数构造并初始化武器数量
     public Army(int count) {
@@ -37,7 +37,6 @@ public class Army {
             }
         }
     }
-
     public void should() {
         for (int i = 0; i < weapons.length; i++) {
             if (weapons[i] instanceof Shotable) {
