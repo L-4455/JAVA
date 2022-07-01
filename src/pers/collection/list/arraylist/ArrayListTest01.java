@@ -1,4 +1,4 @@
-package pers.collection.arraylist;
+package pers.collection.list.arraylist;
 
 import java.util.ArrayList;
 
@@ -24,6 +24,9 @@ public class ArrayListTest01 {
           ArrayList扩容机制:
             扩容后的容量是扩容之前的1.5倍.
 
+          ArrayList是非线程安全的
+
+
 
 
      */
@@ -42,5 +45,7 @@ public class ArrayListTest01 {
             ArrayList集合满容量满了会自动扩容
             扩容后的容量是扩容之前的1.5倍;
          */
+
+
     }
 }

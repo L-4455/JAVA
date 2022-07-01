@@ -1,4 +1,4 @@
-package pers.collection.danlink;
+package pers.collection.list.linkedlist.danlink;
 
 
 /**

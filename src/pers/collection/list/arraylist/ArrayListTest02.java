@@ -1,4 +1,4 @@
-package pers.collection.arraylist;
+package pers.collection.list.arraylist;
 
 import java.util.ArrayList;
 import java.util.Collection;
