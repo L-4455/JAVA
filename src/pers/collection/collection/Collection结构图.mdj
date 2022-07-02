@@ -3343,6 +3343,32 @@
 							"width": 252.255859375,
 							"height": 95,
 							"text": "TreeSet实际上是TreeMap.new \nTreeSet时实际上是new了TreeMap,\n往TreeSet放数据时\n实际上是放到了TreeMap中,\nTreeMap集合是一个二叉树数据结构"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGBuR+1oUrO3o8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 16,
+							"top": 760,
+							"width": 275.07177734375,
+							"height": 272,
+							"text": "1、ArrayList初始化默认值是10.\n自动扩容是扩容之后的容\n量是扩容之前的1.5倍\n\n2、扩容:扩容之前的1.5倍\n3、数组:\n优点:检索效率高,因为内存地址连续且有下标\n缺点:随机增删效率低,因为内存地址连续,\n4、在开发中预估计集合的容量\n避免频繁的扩容集合\n5、底层数组类型是Object[]类型的\n\n"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGBuSsGkVAYrYw=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 272,
+							"top": 760,
+							"width": 205.76806640625,
+							"height": 240,
+							"text": "1、LinkedList集合底\n层是双向链表\n2、双向链表中\n有一个node的节点，该节点\n有三个属性：\nperv\ndata\nnext\n3、该集合的\n优点：随机增删效率\n高，内存地址不连续。\n缺点：检索效率低，内存地址不连续。\n4、\n\n"
 						}
 					]
 				},

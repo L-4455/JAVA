@@ -1,8 +1,8 @@
 package pers.collection.list.vector;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 import java.util.Vector;
 
 /**
@@ -44,9 +44,10 @@ public class VectorTet01 {
             System.out.println(vector.get(i));
         }
 
-        Collection collection = new ArrayList();
-        collection.add(100);
+
+        List list = new ArrayList();
+        list.add(100);
 //      转换为线程安全的
-        Collections.synchronizedCollection(collection);
+        Collections.synchronizedList(list);
     }
 }
