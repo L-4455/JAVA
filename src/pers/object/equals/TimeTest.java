@@ -31,7 +31,8 @@ public class TimeTest {
 //         判断结果为false,因为"=="判断的是JAVA对象保存的值判断,也就是内存地址。判断的是该引用保存对象的内存地址.
 //         而time和time1都是new出来的,内存地址肯定不同.
 //         在进行JAVA对象判断时我们一般都是判断该对象中的内容,而不是该对象的内存地址。应当使用equals
-        System.out.println(time == time1);//false
+//        false
+        System.out.println(time == time1);
 
         /*为什么equals判断结果也是false呢?
         看一下源码:
@@ -48,17 +49,24 @@ public class TimeTest {
 //        boolean flag = time.equals(time1);
 //        System.out.println(flag);
 
-//        重写之后的返回结果:
+//        重写equals之后的返回结果:true
         boolean flag = time.equals(time1);
-        System.out.println(flag);//true
+        //true
+        System.out.println(flag);
+
+//        测试
         Time time2 = new Time(2005, 4, 28);
         boolean flag1 = time.equals(time2);
-        System.out.println(flag1);//false
+        //false
+        System.out.println(flag1);
 
+//        测试
         Time time3 = null;
         boolean flag2 = time.equals(time3);
-        System.out.println(flag2);//false
+        //false
+        System.out.println(flag2);
 
+//        直接输出time1和time2会调用Time的重写后的toString方法,如果不重写就调用Object的toString方法.
         System.out.println(time2);
         System.out.println(time1);
 
