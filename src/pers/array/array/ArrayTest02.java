@@ -1,6 +1,4 @@
-package pers.array;
-
-import java.util.Arrays;
+package pers.array.array;
 
 /**
  * @Author LiZiHao

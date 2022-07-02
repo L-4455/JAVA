@@ -43,41 +43,44 @@ public class Time {
         this.day = day;
     }
 
-    // 方法重写:返回值相同,方法名相同,形式参数列表相同.
-    /* public boolean equals(Object obj) {
-     *//*
-     * 判断time和time1中的内容是否相等
-     *
-     * *//*
+//     方法重写:返回值相同,方法名相同,形式参数列表相同.
+    /*public boolean equals(Object obj) {
 //        获取time的时间
         int year1 = this.year;
         int moth1 = this.moth;
         int day1 = this.day;
-//        获取time1的时间
-//        time.equals(time1);所以obj就是time1
-        *//*java: 找不到符号
-        符号:   变量 year
-        位置: 类型为java.lang.Object的变量 obj
+
+
+        *//*
+        获取time1的时间
         int year2 = obj.year;
         int moth2 = obj.moth;
-        int day2 = obj.day;*//*
-     *//*编译错误:
-     * 在Object中找不到year,moth,day.
-     * time.equals(time1);
-     * Time是子类,Object是夫类.所以当使用obj时是从Object中找obj所调用的属性,但是Object中没有year....需要强转
-     * *//*
+        int day2 = obj.day;
+
+        编译错误:
+        java: 找不到符号
+        符号:   变量 year
+        位置: 类型为java.lang.Object的变量 obj
+        编译错误原因:
+        Time是子类,Object是父类.所以当使用obj时是从Object中找obj所调用的属性,
+        但是Object中没有year....需要强转.
+        *//*
+
         if (obj instanceof Time) {
             // 当obj等于空时,这片代码没有执行.
             Time time = (Time) obj;
             int year2 = time.year;
             int moth2 = time.moth;
             int day2 = time.day;
+            *//*改良
             if (year1 == year2 && moth1 == moth2 && day1 == day2) {
                 return true;
-            }
+            }*//*
+            return year1 == year2 && moth1 == moth2 && day1 == day2;
         }
         return false;
-    }*/
+    }
+*/
 //    改良版
     /*public boolean equals(Object obj){
         if(obj == null){
@@ -95,24 +98,26 @@ public class Time {
         }
         return false;
     }*/
-//    再次改良
-    public boolean equals(Object obj) {
-        if (obj == null || !(obj instanceof Time)) {
-            return false;
-        }
-        if (this == obj) {
-            return true;
-        }
-        Time time = (Time) obj;
-        return (this.year == time.year && this.moth == time.moth && this.day == time.day);
-    }
 
-    @Override
-    public String toString() {
-        return "Time{" +
-                "year=" + year +
-                ", moth=" + moth +
-                ", day=" + day +
-                '}';
-    }
+//    再次改良
+
+//    public boolean equals(Object obj) {
+//        if (obj == null || !(obj instanceof Time)) {
+//            return false;
+//        }
+//        if (this == obj) {
+//            return true;
+//        }
+//        Time time = (Time) obj;
+//        return (this.year == time.year && this.moth == time.moth && this.day == time.day);
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return "Time{" +
+//                "year=" + year +
+//                ", moth=" + moth +
+//                ", day=" + day +
+//                '}';
+//    }
 }

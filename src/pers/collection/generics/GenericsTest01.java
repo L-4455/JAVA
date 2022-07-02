@@ -20,6 +20,7 @@ public class GenericsTest01 {
         4、泛型使用方法,在支持泛型机制的集合后加  <数据类型> 。
 
         5、如果泛型指定的数据类型有子类,那么想要调用子类的特有方法还是需要向下转型的。
+        6、泛型只能写引用数据类型,不能写基本数据类型
      */
     public static void main(String[] args) {
 

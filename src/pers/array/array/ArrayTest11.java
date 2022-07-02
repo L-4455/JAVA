@@ -1,4 +1,4 @@
-package pers.array;
+package pers.array.array;
 
 /**
  * @Author LiZiHao

@@ -17,20 +17,20 @@ public class Finalize {
          GC不是在JVM启动时启动,GC在启动时一般是垃圾太多,或则某种时间到了.
      */
     public static void main(String[] args) {
-// 1       使用for循环智造更多的垃圾让GC启动
-        /*for(int i = 0; i < 1000000000; i++){
-            Myclass myclass = new Myclass();
-            myclass = null;
+        /*使用for循环制造更多的垃圾让GC启动
+        for(int i = 0; i < 1000000000; i++){
+            User user = new User();
+            user = null;
         }*/
-//2     使用System.gc();
-        Myclass myclass1 = new Myclass();
-        myclass1 = null;
+//      使用System.gc();
+        User user = new User();
+        user = null;
 //        建议垃圾回收器启动,在JDK11中好像是百分之百启动,在其他版本中则不一定.
         System.gc();
     }
 }
 
-class Myclass {
+class User {
     protected void finalize() {
         System.out.println("被销毁了");
     }
