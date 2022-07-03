@@ -5,9 +5,7 @@ package pers.object.equals;
  * @Date 2022/5/12/22:42
  */
 public class User {
-    /*
-            所以再重写equals方法时要写的彻底.
-     */
+//      所以再重写equals方法时要写的彻底.
     String name;
     Address address;
 
@@ -19,7 +17,7 @@ public class User {
         this.address = address;
     }
 
-    //    重写equals方法
+    //        重写equals方法
 //    规则:姓名相同,城市相同,代表两个对象相同.
     public boolean equals(Object obj) {
         if (obj == null || !(obj instanceof User)) return false;
