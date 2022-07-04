@@ -40,6 +40,9 @@ public class HashMapTest01 {
             he default initial capacity - MUST be a power of two
             HashMap初始化容量最好是2的倍数,这是官方推荐的
             因为2的倍数更容易散列分布均匀.提高存取的效率
+        10、hashMap的扩容:
+                元容量 * 2 就是扩容后的容量
+        11、hashMap的key和value的值都可以为null，但是key的null值只能有一个，重复了会覆盖。
      */
     public static void main(String[] args) {
 //        创建map集合
@@ -58,5 +61,14 @@ public class HashMapTest01 {
         for (Map.Entry<String, Integer> stringIntegerEntry : set) {
             System.out.println(stringIntegerEntry.getKey() + " = " + stringIntegerEntry.getValue());
         }
+
+        HashMap hashmap = new HashMap();
+        hashmap.put(null, null);
+        System.out.println(hashmap.size());
+//        key值重复,覆盖value.
+        hashmap.put(null, 200);
+//        value也可以为null
+        hashmap.put(200, null);
+        System.out.println(hashmap.size());
     }
 }
