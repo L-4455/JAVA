@@ -944,8 +944,8 @@
 							"left": 176,
 							"top": 392,
 							"width": 394.2431640625,
-							"height": 214,
-							"text": "hashMap底层是\n哈希表数据结构,\n是非线程安全的\n哈希表中的单向\n链表node节点如果大于等\n于8个,那么这个单向链表会变\n为红黑树,如果红黑树的数据节\n点小于等于6个那么就会变成单\n向链表.这种方式还是为了检索\n效率的提高\nHashMap集合的默认初始化\n容量为16,默认加载因子为0.75"
+							"height": 248,
+							"text": "hashMap底层是\n哈希表数据结构,\n是非线程安全的\n哈希表中的单向\n链表node节点如果大于等\n于8个,那么这个单向链表会变\n为红黑树,如果红黑树的数据节\n点小于等于6个那么就会变成单\n向链表.这种方式还是为了检索\n效率的提高\nHashMap集合的默认初始化\n容量为16,默认加载因子为0.75\n扩容:原容量 * 2 就是新容量\nkey和value能为null值"
 						},
 						{
 							"_type": "UMLTextView",
@@ -953,12 +953,12 @@
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
-							"font": "Arial;10;0",
-							"left": 432,
+							"font": "Arial;15;0",
+							"left": 408,
 							"top": 400,
-							"width": 225.5078125,
-							"height": 82,
-							"text": "hashTable底层也是\n哈希表数据结构,\n但hashTable是线程安全的\n其中所有方法带有synchronized关键字,效率较低\n,现在控制线程安全的方式\n有很多,所以hashTable很少使用"
+							"width": 327.548828125,
+							"height": 165,
+							"text": "hashTable底层也是\n哈希表数据结构,\n但hashTable是线程安全的\n其中所有方法带有synchronized关键字,效率较低\n,现在控制线程安全的方式\n有很多,所以hashTable很少使用\n初始化默认容量为11,加载因子为0.75\n扩容:原容量 * 2 + 1 就是新容量\nkey和value部分不能为null值\n"
 						},
 						{
 							"_type": "UMLInterfaceRealizationView",
@@ -1082,7 +1082,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 144,
+											"left": 368,
+											"top": -48,
 											"height": 13
 										},
 										{
@@ -1092,8 +1093,8 @@
 												"$ref": "AAAAAAGBpFuWCd452T4="
 											},
 											"font": "Arial;13;1",
-											"left": 749,
-											"top": 383,
+											"left": 861,
+											"top": 359,
 											"width": 57.17333984375,
 											"height": 13,
 											"text": "TreeMap"
@@ -1106,7 +1107,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 144,
+											"left": 368,
+											"top": -48,
 											"width": 82.3798828125,
 											"height": 13,
 											"text": "(from Model)"
@@ -1119,14 +1121,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 144,
+											"left": 368,
+											"top": -48,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 744,
-									"top": 376,
+									"left": 856,
+									"top": 352,
 									"width": 67.17333984375,
 									"height": 25,
 									"stereotypeLabel": {
@@ -1152,8 +1155,8 @@
 										"$ref": "AAAAAAGBpFuWCN42SsQ="
 									},
 									"font": "Arial;13;0",
-									"left": 744,
-									"top": 401,
+									"left": 856,
+									"top": 377,
 									"width": 67.17333984375,
 									"height": 10
 								},
@@ -1167,8 +1170,8 @@
 										"$ref": "AAAAAAGBpFuWCN42SsQ="
 									},
 									"font": "Arial;13;0",
-									"left": 744,
-									"top": 411,
+									"left": 856,
+									"top": 387,
 									"width": 67.17333984375,
 									"height": 10
 								},
@@ -1183,7 +1186,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 72,
+									"left": 184,
+									"top": -24,
 									"width": 10,
 									"height": 10
 								},
@@ -1198,15 +1202,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 72,
+									"left": 184,
+									"top": -24,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 744,
-							"top": 376,
+							"left": 856,
+							"top": 352,
 							"width": 67.17333984375,
 							"height": 45,
 							"nameCompartment": {
@@ -1232,8 +1237,8 @@
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"font": "Arial;10;0",
-							"left": 760,
-							"top": 328,
+							"left": 824,
+							"top": 288,
 							"width": 90,
 							"height": 40,
 							"text": "TreeMap底层\n是二叉树数据结构"
@@ -1259,8 +1264,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 710,
-									"top": 316,
+									"left": 772,
+									"top": 307,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -1280,8 +1285,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 697,
-									"top": 324,
+									"left": 764,
+									"top": 319,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1301,8 +1306,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 735,
-									"top": 299,
+									"left": 789,
+									"top": 282,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1320,7 +1325,7 @@
 								"$ref": "AAAAAAGBpFuWCd44gm0="
 							},
 							"lineStyle": 1,
-							"points": "762:375;685:254",
+							"points": "855:351;707:251",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGBpFzlGd5uMIs="
@@ -1374,6 +1379,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -32,
+											"top": 240,
 											"height": 13
 										},
 										{
@@ -1384,7 +1390,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 437,
-											"top": 495,
+											"top": 615,
 											"width": 94,
 											"height": 13,
 											"text": "Properties"
@@ -1398,6 +1404,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -32,
+											"top": 240,
 											"width": 82.3798828125,
 											"height": 13,
 											"text": "(from Model)"
@@ -1411,13 +1418,14 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -32,
+											"top": 240,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 432,
-									"top": 488,
+									"top": 608,
 									"width": 104,
 									"height": 25,
 									"stereotypeLabel": {
@@ -1444,7 +1452,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 432,
-									"top": 513,
+									"top": 633,
 									"width": 104,
 									"height": 10
 								},
@@ -1459,7 +1467,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 432,
-									"top": 523,
+									"top": 643,
 									"width": 104,
 									"height": 10
 								},
@@ -1475,6 +1483,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -16,
+									"top": 120,
 									"width": 10,
 									"height": 10
 								},
@@ -1490,6 +1499,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -16,
+									"top": 120,
 									"width": 10,
 									"height": 10
 								}
@@ -1497,7 +1507,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 432,
-							"top": 488,
+							"top": 608,
 							"width": 104,
 							"height": 45,
 							"nameCompartment": {
@@ -1538,7 +1548,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 468,
-									"top": 431,
+									"top": 491,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -1559,7 +1569,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 453,
-									"top": 431,
+									"top": 491,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1580,7 +1590,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 497,
-									"top": 432,
+									"top": 492,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1598,7 +1608,7 @@
 								"$ref": "AAAAAAGBpGImKN6Vrrk="
 							},
 							"lineStyle": 1,
-							"points": "483:487;484:389",
+							"points": "483:607;484:389",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGBpGJXMN7AunE="
@@ -1617,9 +1627,9 @@
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"font": "Arial;13;0",
-							"left": 432,
-							"top": 544,
-							"width": 913.68408203125,
+							"left": 416,
+							"top": 680,
+							"width": 212.2490234375,
 							"height": 128,
 							"text": "Properties是线程安全的,\n因为继承hashMap,\n另外Properties存储元素的时候也是\n采用Key和Value的形式存储,\n并且Key和Value只\n支持String类型不支持其他类型.\nProperties被称为属性类;"
 						}
