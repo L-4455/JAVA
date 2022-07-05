@@ -3340,9 +3340,9 @@
 							"font": "Arial;15;0",
 							"left": 1160,
 							"top": 640,
-							"width": 252.255859375,
+							"width": 272.8076171875,
 							"height": 95,
-							"text": "TreeSet实际上是TreeMap.new \nTreeSet时实际上是new了TreeMap,\n往TreeSet放数据时\n实际上是放到了TreeMap中,\nTreeMap集合是一个二叉树数据结构"
+							"text": "TreeSet实际上是TreeMap.new \nTreeSet时实际上是new了TreeMap,\n往TreeSet放数据时\n实际上是放到了TreeMap中的key部分了\nTreeMap集合是一个二叉树数据结构"
 						},
 						{
 							"_type": "UMLTextView",

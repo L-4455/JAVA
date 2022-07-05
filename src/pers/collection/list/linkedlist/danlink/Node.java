@@ -5,17 +5,38 @@ package pers.collection.list.linkedlist.danlink;
  * @Date 2022/7/1/11:20
  */
 public class Node {
-    Object date;
+
+    Object data;
     Node next;
-    Node header;
-    private int size = 0;
+
+    private int index;
+    private int size;
 
     public Node() {
-
     }
 
-    public Node(Object date, Node next) {
-        this.date = date;
+    public Node(Object data) {
+        this.data = data;
+    }
+
+    public Node(Object data, Node next) {
+        this.data = data;
         this.next = next;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
     }
 }
