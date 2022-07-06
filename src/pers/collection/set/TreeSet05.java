@@ -35,7 +35,6 @@ public class TreeSet05 {
 
     }
 }
-
 class Cat implements Comparable<Cat> {
     int age;
 
@@ -56,6 +55,9 @@ class Cat implements Comparable<Cat> {
     }
 }
 
+/**
+ * Cat的比较器
+ */
 class CatComparator implements Comparator<Cat> {
     @Override
     public int compare(Cat o1, Cat o2) {
