@@ -6,7 +6,9 @@ package pers.collection.list.linkedlist.danlink;
  */
 public class Test {
     public static void main(String[] args) {
+
         MyLinkedList link = new MyLinkedList();
+
         link.add("www");
         link.add(10);
         link.add("i love you");
@@ -38,12 +40,11 @@ public class Test {
         link.traverse();
         System.out.println("元素个数:" + link.size());
 
-        try {
-            link.remove(10011);
-        } catch (RemoveException e) {
-            e.printStackTrace();
-        }
 
+        link.traverse();
+        link.remove(10);
+        link.remove(3000);
+        link.traverse();
 
     }
 }

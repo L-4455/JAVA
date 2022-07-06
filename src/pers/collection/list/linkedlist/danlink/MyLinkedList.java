@@ -34,10 +34,7 @@ public class MyLinkedList {
      *
      * @param obj 指定元素
      */
-    public void remove(Object obj) throws RemoveException {
-        if (obj == null) {
-            throw new RemoveException("删除错误,该元素不存在");
-        }
+    public void remove(Object obj) {
         Node temp = header;
         while (temp != null) {
             if (temp.data == obj) {
@@ -53,6 +50,7 @@ public class MyLinkedList {
         size--;
         pointer--;
     }
+
 
     /**
      * [改]修改指定元素
@@ -141,6 +139,7 @@ public class MyLinkedList {
                 '}';
     }
 }
+
 
 
 
