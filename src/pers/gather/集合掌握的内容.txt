@@ -1,0 +1,12 @@
+1.集合的创建
+2.添加元素
+3.查询元素
+4.遍历集合
+5.集合的种类:
+    ArrayList
+    LinkedList
+    TreeSet
+    HashSet
+    HashMap
+    TreeMap
+    Properties
