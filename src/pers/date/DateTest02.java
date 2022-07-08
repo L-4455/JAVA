@@ -16,8 +16,11 @@ public class DateTest02 {
         long w = System.currentTimeMillis();
 //        1655011564902
         System.out.println(w);
+
+//        记录开始时间
         long begin = System.currentTimeMillis();
         Monkey();
+//        记录结束时间
         long end = System.currentTimeMillis();
         System.out.println("耗时" + (end - begin) + "ms");
 

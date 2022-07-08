@@ -1,0 +1,81 @@
+IO的概述:
+	1.IO是作为硬盘和内存之间的输入输出工具,
+	2.I:输入(Input) O:输出(Output);
+	3.硬盘文件到内存这个过程就是输入;
+	4.内存文件到硬盘这个过程就是输出;
+IO的分类:
+	1.	按照参照物进行分类:
+		以内存为参照物:
+		往内存去,叫做输入(Input),或者叫做 读(Reader);
+		从内存中出来,叫做输出(Output),或者叫做写(Write);
+	2.	按照读取数据方式进行不同的分类:
+		1.按照字节方式读取数据,一次读取一个字节(Byte),相当于8个比特位(bit),这种流是万能的,什么数据都能读取
+		比如:文本,图片,声音,视频....
+		比如:file.txt文本中有以下数据:
+			a啊b我ss爱df你
+		使用字节方式读取是这样读的:
+			第一次读:a
+			第二次读:啊(读取'啊'的一半,因为啊在windows中占用了2个字节,字节读取方式一次只能读一个字节)
+			第三次读:啊(读取了'啊'的另一半)
+		2.按照字符方式读取数据,一次读一个字符,这种读取方式只能读取普通文本(txt),word文档都不能读取;
+
+		比如:file.txt文本中有以下数据:
+			a啊b我ss爱df你
+		使用字符方式读取是这样读的:
+			第一次读:'a'(a字符在windows系统中占用1个字节);
+			第二次读:'啊'(啊字符在windows系统中占用2个字节);
+
+	3.	IO流的总体分类:
+		输入流,输出流
+		字节流,字符流
+	4. 所有的流都在java.io.*包下	
+		IO流的四大家族:
+		java.io.InputStream
+		java.io.OutputStream
+
+		java.io.Writer
+		java.io.Reader
+
+		这四个流都是抽象的(abstract)修饰的
+		以Stream后缀结尾的是字节流,以Write/Read结尾的是字符流.
+
+
+	5.	这四个流都是可关闭的,内存和硬盘之间有一个通道,这个通道如果不关闭会占用系统资源.
+		所以要养成好习惯,使用完流就关闭.
+		这四个流都实现了Closeable接口,该接口中有一个close方法,是用来关闭流的.
+
+	6.	OutputStream输出流实现了 Flushable 接口,该接口中有一个方法:flush方法
+		这个方法是用来刷新输出流的,内存写数据到硬盘期间的通道会有数据落下,使用flush就是强制
+		把通道中的数据写入到硬盘中使用完输出流要使用flush方法,要不有可能会造成数据丢失.
+		这个flush是输出流特有的方法,输入流没有.
+		
+	7.java.io包下需要掌握的流如下:
+		文件专属流:
+		java.io.FileInputStream
+		java.io.FileOutputStream
+		java.io.FileReader
+		java.io.FileWrite
+
+		转换流(字节流转为字符流)
+		java.io.InputStreamReader
+		java.io.OutputStreamWrite
+
+		缓冲专属流:
+		java.io.BufferInputStream
+		java.io.BufferOutputStream
+		java.io.BufferWriter
+		java.io.BufferReader
+
+		数据专属流:
+		java.io.DataInputStream
+		java.io.DataOutputStream
+
+		标准输出流:
+		java.io.PrintStream
+		java.io.PrintWrite
+
+		对象专属流:
+		java.io.ObjectInputStream
+		java.io.ObjectOutputStream
+
+
