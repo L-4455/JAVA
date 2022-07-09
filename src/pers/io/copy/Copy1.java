@@ -23,10 +23,10 @@ public class Copy1 {
 //        先读取数据
         try {
 //            创建输入流对象
-            fileInputStream = new FileInputStream("D:\\下载\\最伟大的作品官方.mp4");
+            fileInputStream = new FileInputStream("D:\\我的账户.txt");
             byte[] bytes = new byte[1024 * 1024]; // 一次读3MB
 //            创建输出流对象
-            fileOutputStream = new FileOutputStream("D:\\Videos\\最伟大的作品官方.mp4", true);
+            fileOutputStream = new FileOutputStream("D:\\Videos\\我的账户.txt", true);
 
             long begin = System.currentTimeMillis();
 

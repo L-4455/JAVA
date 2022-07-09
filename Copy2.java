@@ -1,8 +1,6 @@
 package pers.io.copy;
 
 
-import pers.io.filereader.FileReaderTest;
-
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -25,14 +23,14 @@ public class Copy2 {
 //            开始一边读一边写
             char[] chars = new char[1024 * 512]; // 1MB
             int temp = 0;
-            while((temp = fileReader.read(chars)) != -1){
-                fileWriter.write(chars,0,temp);
+            while ((temp = fileReader.read(chars)) != -1) {
+                fileWriter.write(chars, 0, temp);
             }
 //            刷新文件
             fileWriter.flush();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally{
+        } finally {
             if (fileWriter != null) {
                 try {
                     fileWriter.close();

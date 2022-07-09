@@ -1,4 +1,4 @@
-package pers.io.BufferedStream;
+package pers.io.BufferedReader;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
