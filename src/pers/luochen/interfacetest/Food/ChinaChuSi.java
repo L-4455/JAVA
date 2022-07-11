@@ -9,7 +9,7 @@ public class ChinaChuSi implements Food {
         System.out.println("中国厨师做的西红柿炒鸡蛋");
     }
 
-    public void MaLaXiangGuo() {
+    public void maLaXiangGuo() {
         System.out.println("中国厨师做的麻辣香锅");
     }
 }

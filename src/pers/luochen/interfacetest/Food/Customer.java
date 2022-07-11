@@ -29,6 +29,6 @@ public class Customer {
 
 //        Food food1 = this.getFood();
         food.XiHongSiChaoDan();
-        food.MaLaXiangGuo();
+        food.maLaXiangGuo();
     }
 }

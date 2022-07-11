@@ -1,7 +1,5 @@
 package pers.io.copy;
 
-import pers.io.CopyException;
-
 import java.io.*;
 
 /**

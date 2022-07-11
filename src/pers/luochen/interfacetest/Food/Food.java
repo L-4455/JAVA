@@ -5,5 +5,6 @@ package pers.luochen.interfacetest.Food;
  */
 public interface Food {
     void XiHongSiChaoDan();
-    void MaLaXiangGuo();
+
+    void maLaXiangGuo();
 }

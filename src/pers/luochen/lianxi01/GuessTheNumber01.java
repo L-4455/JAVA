@@ -4,7 +4,7 @@ package pers.luochen.lianxi01;
  * @Author LiZiHao
  * @Date 2022/04/20/21:54
  */
-public class GuessTheNumber {
+public class GuessTheNumber01 {
     /*
             猜数字游戏,这里的数字先由用户自定义.不使用随机数.
      */
@@ -19,7 +19,6 @@ public class GuessTheNumber {
             }
         }
     }
-
 }
 
 class A {
