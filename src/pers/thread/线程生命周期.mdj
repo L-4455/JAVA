@@ -178,7 +178,7 @@
 													"font": "Arial;13;0",
 													"left": -16,
 													"top": 144,
-													"width": 38.27001953125,
+													"width": 42.2626953125,
 													"height": 13,
 													"text": "(from )"
 												},
@@ -300,9 +300,9 @@
 												"$ref": "AAAAAAGB7F6lTniSUQs="
 											},
 											"font": "Arial;15;0",
-											"left": 256,
+											"left": 254,
 											"top": 416,
-											"width": 29.17236328125,
+											"width": 32.607421875,
 											"height": 15,
 											"alpha": 1.5707963267948966,
 											"distance": 15,
@@ -384,7 +384,7 @@
 									"font": "Arial;15;0",
 									"left": 208,
 									"top": 576,
-									"width": 305.84716796875,
+									"width": 307.82470703125,
 									"height": 112,
 									"text": "就绪状态又称为可运行状态,\n表示当前线程具有抢夺CPU时间片的权利\n(CPU时间片又称为执行权),\n当这个线程抢到了执行权,\n就会运行run方法,\nrun方法的执行意味着这个线程到了运行状态.",
 									"wordWrap": false
@@ -444,7 +444,7 @@
 													"font": "Arial;13;0",
 													"left": 32,
 													"top": 176,
-													"width": 38.27001953125,
+													"width": 42.2626953125,
 													"height": 13,
 													"text": "(from )"
 												},
@@ -566,9 +566,9 @@
 												"$ref": "AAAAAAGB7GM4knjb3kU="
 											},
 											"font": "Arial;13;0",
-											"left": 542,
+											"left": 541,
 											"top": 520,
-											"width": 18.7890625,
+											"width": 20.9853515625,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 15,
@@ -650,7 +650,7 @@
 									"font": "Arial;15;0",
 									"left": 648,
 									"top": 584,
-									"width": 301.6796875,
+									"width": 304.2138671875,
 									"height": 78,
 									"text": "运行状态会执行run方法,\n当运行状态的占有执行权没有了\n,会继续回到就绪状态抢夺执行权,\n抢到后会继续接着上一次的run方法往下执行"
 								},
@@ -674,9 +674,9 @@
 												"$ref": "AAAAAAGB7GbywnkotTc="
 											},
 											"font": "Arial;13;0",
-											"left": 734,
+											"left": 733,
 											"top": 419,
-											"width": 70.7890625,
+											"width": 72.9853515625,
 											"height": 13,
 											"alpha": -4.406510041680232,
 											"distance": 44.553338819890925,
@@ -924,7 +924,7 @@
 													"font": "Arial;13;0",
 													"left": 64,
 													"top": -16,
-													"width": 38.27001953125,
+													"width": 42.2626953125,
 													"height": 13,
 													"text": "(from )"
 												},
@@ -1154,7 +1154,7 @@
 									"font": "Arial;13;0",
 									"left": 400,
 									"top": 200,
-									"width": 395.658203125,
+									"width": 395.68359375,
 									"height": 89,
 									"text": "阻塞状态意味这run方法执行过程中遇到了让程序停下来的事件,\n比如:接受用户键盘输入.进入阻塞状态后,\n运行状态会放弃所占有的执行权.\n当阻塞状态结束,会回到就绪状态继续抢夺执行权,\n抢到了就进去运行状态接着上一次的代码执行(并不会重新执行代码)"
 								},
@@ -1252,6 +1252,32 @@
 									"propertyLabel": {
 										"$ref": "AAAAAAGB7G1knHnb5KE="
 									}
+								},
+								{
+									"_type": "UMLTextView",
+									"_id": "AAAAAAGB8I41I9MjHFQ=",
+									"_parent": {
+										"$ref": "AAAAAAGB7FyLqXhI2Bc="
+									},
+									"font": "Arial;15;0",
+									"left": 648,
+									"top": 392,
+									"width": 73.37646484375,
+									"height": 32,
+									"text": "sleep,join"
+								},
+								{
+									"_type": "UMLTextView",
+									"_id": "AAAAAAGB8I56sdMo/ZM=",
+									"_parent": {
+										"$ref": "AAAAAAGB7FyLqXhI2Bc="
+									},
+									"font": "Arial;20;0",
+									"left": 504,
+									"top": 544,
+									"width": 104,
+									"height": 32,
+									"text": "yield"
 								}
 							]
 						}

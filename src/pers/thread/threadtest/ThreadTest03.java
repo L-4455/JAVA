@@ -1,4 +1,4 @@
-package pers.thread;
+package pers.thread.threadtest;
 
 /**
  * @Author LiZiHao
