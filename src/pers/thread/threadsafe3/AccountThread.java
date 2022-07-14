@@ -1,4 +1,4 @@
-package pers.thread.threadsafe2;
+package pers.thread.threadsafe3;
 
 /**
  * @Author LiZiHao
@@ -16,9 +16,10 @@ public class AccountThread extends Thread {
 
 //        取钱
         int money = 10000;
-
-        act.Pick(money);
-
+//        使用这种方式也可以的,只是扩大了同步范围.
+        synchronized (act) {
+            act.Pick(money);
+        }
 
     }
 }

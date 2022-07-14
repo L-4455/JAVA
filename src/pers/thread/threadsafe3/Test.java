@@ -1,4 +1,4 @@
-package pers.thread.threadsafe2;
+package pers.thread.threadsafe3;
 
 /**
  * @Author LiZiHao
@@ -6,7 +6,8 @@ package pers.thread.threadsafe2;
  */
 public class Test {
     public static void main(String[] args) {
-        Account account = new Account("A100001", 10000);
+//        在run方法中使用synchronized也是可以的.
+        Account account = new Account("A100001", 20000);
 
         Thread t1 = new AccountThread(account);
         Thread t2 = new AccountThread(account);

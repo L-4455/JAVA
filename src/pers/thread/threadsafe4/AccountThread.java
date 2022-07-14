@@ -1,11 +1,11 @@
-package pers.thread.threadsafe2;
+package pers.thread.threadsafe4;
 
 /**
  * @Author LiZiHao
  * @Date 2022/07/12/16:43
  */
 public class AccountThread extends Thread {
-    private Account act;
+    private final Account act;
 
     public AccountThread(Account act) {
         this.act = act;
@@ -16,9 +16,7 @@ public class AccountThread extends Thread {
 
 //        取钱
         int money = 10000;
-
         act.Pick(money);
-
 
     }
 }

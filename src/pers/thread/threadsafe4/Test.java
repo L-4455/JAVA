@@ -1,4 +1,4 @@
-package pers.thread.threadsafe2;
+package pers.thread.threadsafe4;
 
 /**
  * @Author LiZiHao
@@ -6,7 +6,7 @@ package pers.thread.threadsafe2;
  */
 public class Test {
     public static void main(String[] args) {
-        Account account = new Account("A100001", 10000);
+        Account account = new Account("B00001", 20000);
 
         Thread t1 = new AccountThread(account);
         Thread t2 = new AccountThread(account);
