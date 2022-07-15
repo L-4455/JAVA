@@ -1,4 +1,4 @@
-package pers.thread.lianxi;
+package pers.thread.lianxi.d1;
 
 import java.util.Scanner;
 
