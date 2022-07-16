@@ -1,0 +1,11 @@
+1.什么是反射?反射是干什么的?
+    反射机制可以操控.class文件,就是字节码文件
+    可以使程序更加灵活,便捷.
+2.反射机制相关的类在包下:
+    java.lang.reflect.*
+3.反射机制相关的类有如下:
+    java.lang.Class // 代表整个Class文件
+    java.lang.reflect.Method // 代表Class文件中的方法
+    java.lang.reflect.Constructor // 代表Class文件中的构造方法
+    java.lang.reflect.Field // 代表Class文件中的属性(成员变量+静态变量)
+4.
