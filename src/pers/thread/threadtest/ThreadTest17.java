@@ -8,7 +8,7 @@ import java.util.List;
  * @Date 2022/07/15/16:26
  */
 public class ThreadTest17 {
-    /*
+/*
 1.使用wait和notify实现生产者和消费者模式
 
 2.什么是"生产者和消费者模式"?
@@ -46,7 +46,6 @@ public class ThreadTest17 {
         t2.start();
     }
 }
-
 
 /**
  * 生产者
