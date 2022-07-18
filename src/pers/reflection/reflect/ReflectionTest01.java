@@ -1,4 +1,4 @@
-package pers.reflection;
+package pers.reflection.reflect;
 
 import java.util.Date;
 
@@ -10,7 +10,8 @@ public class ReflectionTest01 {
     /*
         获取Class文件的三种方式
         1.Class.forName("这里是带包名的类名");
-        2.
+        2.Object obj = User.getClass;
+        3.Class c = int.class;
      */
     public static void main(String[] args) {
 

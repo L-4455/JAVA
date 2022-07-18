@@ -1,0 +1,40 @@
+1.什么是反射?反射是干什么的?
+    1.1 反射机制可以操控.class文件,就是字节码文件
+    1.2 可以使程序更加灵活,便捷.
+
+2.反射机制相关的类在包下:
+    java.lang.reflect.*
+
+3.反射机制相关的类有如下:
+    java.lang.Class // 代表整个Class文件
+    java.lang.reflect.Method // 代表Class文件中的方法
+    java.lang.reflect.Constructor // 代表Class文件中的构造方法
+    java.lang.reflect.Field // 代表Class文件中的属性(成员变量+静态变量)
+
+4.获取Class的三种方式:
+    第一种:Class c = Class.forName("完整类名");
+
+    每个java对象都有getClass属性.
+    第二种:Object obj = User.getClass;
+
+    每个数据类型都有Class属性.
+    第三种: Class c = int.class;
+           Class c = String.class;
+5.通过反射机制实例化对象
+    Class c = Class.forName("pers.reflection.bean.User");
+
+    c.newInstance会调用对象的无参数构造方法啊
+    这样就完成了对象的实例化
+    Object obj = c.newInstance();
+
+
+6.通过属性配置文件实例化对象
+    创建一个.properties结尾的文件
+    文件内容为:key=类名
+    通过key获取value
+    再通过c.newInstance();实例化对象
+    这样的方式符合OCP原则,不修改源代码,修改属性配置文件即可.
+
+7.想要类中的静态代码块执行
+    可以使用Class.forName();
+

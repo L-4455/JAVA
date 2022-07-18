@@ -1,4 +1,4 @@
-package pers.reflection;
+package pers.reflection.reflect;
 
 /**
  * @Author LiZiHao
@@ -17,7 +17,8 @@ public class ReflectionTest02 {
 //        获取class字节码
         Class c = null;
         try {
-            c = Class.forName("pers.reflection.User");
+            c = Class.forName("pers.reflection.bean.User");
+
 
 //            实例化异常,User方法提供了有参数构造,无参数不在默认提供.这里只调用了无参数构造方法.
 //            Object o = c.newInstance();

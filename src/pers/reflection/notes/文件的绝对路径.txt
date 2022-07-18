@@ -1,0 +1,17 @@
+1.文件的绝对路径怎么获取
+    首先:文件的存放位置必须在类路径下.
+    让后通过:
+    Thread.currentThread().getContextClassLoader().getResource("文件名").getPath();
+    这个方法的返回值就是该文件的绝对路径.
+    这种方式更加通用,程序换位置了也可以使用.
+
+2.访问属性配置文件
+    以流的形式直接访问
+    InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream("文件路径");
+    这种方式更好用,直接以流的方式返回属性配置文件中的数据.再把这个流放到Map集合中.
+
+3.资源绑定器
+    可以更加快捷的获取属性配置文件中的数据
+        绑定的资源必须是属性配置文件,以.properties结尾的文件/.
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("属性配置文件名");
+        这种方式更加方便的获取到属性配置文件中的数据.

@@ -1,4 +1,4 @@
-package pers.reflection;
+package pers.reflection.reflect;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
