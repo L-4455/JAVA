@@ -1,11 +1,14 @@
 1.怎么通过反射实例化对象?
-    1.1 先试用Class.forName("完整的类名")方法获取到class文件.
-        拿到返回值.newInstance();即可实例化对象.
-        .newInstance()是通过类的无参数构造方法实例化对象的.
-    1.2 也可以使用有参数构造方法实例化对象
-        1.2.1 获取class文件.
-        1.2.2 获取class文件指定的构造方法拿到返回值.
-        1.2.3 通过返回值.newInstance("实际参数");来实例化对象.
+    1.1 
+    先试用Class.forName("完整的类名")方法获取到class文件.
+    拿到返回值.newInstance();即可实例化对象.
+    .newInstance()是通过类的无参数构造方法实例化对象的.
+    1.2
+    也可以使用有参数构造方法实例化对象
+       1.2.1 获取class文件.
+       1.2.2 获取class文件指定的构造方法拿到返回值.
+       1.2.3 通过返回值.newInstance("实际参数");来实例化对象.
+
 2.具体代码实现实例化对象
 	2.1
 	Class vipServiceClass = Class.forName("pers.reflection.bean.Vip");
@@ -15,42 +18,30 @@
 	Constructor constructor =  VipServiceClass.getDeclaredConstructor(int no, String name);
 	constructor.newInstance(101,"lisi");
 
-3.怎么通过反射机制获取属性?
-	3.1 获取Class文件,在通过class文件调用相对应的方法.具体代码实现:
-	3.2
-	Class vipClass = Class.forName("pers.reflection.bean.Vip");
-	object obj = vipClass.newInstance();
-	获取所有公开的属性名:
-	Field[] fields = vipClass.getFields();
-	for (Field field : fields)(
-		String fieldName = field.getName();
-		System.out.println(fieldName);
-	)
-
-
-
-
-
-
-
-
-
-.怎么通过反射机制访问属性?
-
-
-
-
-
-
-.怎么通过反射机制获取属性的:修饰符列表,返回值,属性名 属性值?
-	.先获取Class文件,使用反射机制实例化对象.
+3.怎么通过反射机制访问属性?
+	3.1 
+	先获取Class文件,使用反射机制实例化对象.
 	Class vip = Class.forName("pers.reflection.bean.Vip");
 	object obj = vip.newInstance();
-	.在获取所有属性的名
-		Filed[] fields = vip.getDeclardFields();
+	3.2
+	在获取需要访问的属性:
+	Field AgeField = vip.getDeclaredField("age");
+	修改
+	AgeField.set(obj, 100);
+	获取
+	System.out.println(AgeField.get(obj));
+
+4.怎么通过反射机制获取属性的:修饰符列表,返回值,属性名 属性值?
+	4.1
+	先获取Class文件,使用反射机制实例化对象.
+	Class vip = Class.forName("pers.reflection.bean.Vip");
+	object obj = vip.newInstance();
+	4.2
+	在获取所有属性
+		Filed[] fields = vip.getDeclaredFields();
 		for(Field field : fields){
 			获取属性的修饰符列表:
-			String parameterName = Modifier.toString(field.Modifiers()).
+			System.out.println(Modifier.toString(field.Modifiers()));
 
 			获取属性的类型:
 			简短类型名
@@ -62,9 +53,47 @@
 			System.out.println(field.getName());
 
 			获取属性值:
-			vip.getDeclaredField(field.getName()).get(obj);
+			有的属性是私有的或受保护的,需要打破.
+			Field noField = vipClass.getDeclaredField(field.getName());
+			noField.setAccessible(true);
 
-		}
+			System.out.println(noField.get(obj));
+
+	}
+5.反射机制获取构造方法
+    .先获取class文件
+     Class vip = Class.forName("pers.reflection.bean.Vip");
+     Object obj = vip.newInstance();
+     Constructor[] constructors = vipClass.getDeclaredConstructors();
+        for (Constructor constructor : constructors){
+          获取构造方法的修饰符
+     	  System.out.println("构造方法修饰符:" + Modifier.toString(constructor.getModifiers()));
+
+          获取构造方法的方法名
+     	  System.out.println("构造方法名:" + vipClass.getSimpleName());
+
+          获取构造方法的形参类型
+     	  Class[] parameterTypes = constructor.getParameterTypes();
+     	  for (Class parameterType : parameterTypes){
+     	  System.out.println("构造方法形参类型:" + parameterType.getSimpleName());
+     	}
+     }
+
+.通过反射机制调用构造方法
+    5.1 先获取class文件
+    Class vip = Class.forName("pers.reflection.bean.Vip");
+    Object obj = vip.newInstance();
+	
+
+
+
+
+
+
+
+
+
+
 
 
 
