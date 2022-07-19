@@ -31,8 +31,6 @@ public class ReflectionTest14 {
             Constructor con = VipClass.getDeclaredConstructor(int.class, String.class, boolean.class);
             Object newObj = con.newInstance(201, "wang", false);
             System.out.println(newObj);
-
-
         } catch (InstantiationException | IllegalAccessException | NoSuchMethodException |
                  InvocationTargetException e) {
             throw new RuntimeException(e);
