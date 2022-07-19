@@ -38,25 +38,21 @@
 	object obj = vip.newInstance();
 	4.2
 	在获取所有属性
-		Filed[] fields = vip.getDeclaredFields();
-		for(Field field : fields){
-			获取属性的修饰符列表:
-			System.out.println(Modifier.toString(field.Modifiers()));
-
-			获取属性的类型:
-			简短类型名
-			System.out.println(field.getType().typeName.getSimpleName());
-			完整类型名
+	Filed[] fields = vip.getDeclaredFields();
+	for(Field field : fields){
+	获取属性的修饰符列表:
+		System.out.println(Modifier.toString(field.Modifiers()));
+		获取属性的类型:
+		简短类型名
+		System.out.println(field.getType().typeName.getSimpleName());
+		完整类型名
 			System.out.println(field.getType().typeName.getName());
-
 			获取属性名:
 			System.out.println(field.getName());
-
 			获取属性值:
 			有的属性是私有的或受保护的,需要打破.
 			Field noField = vipClass.getDeclaredField(field.getName());
 			noField.setAccessible(true);
-
 			System.out.println(noField.get(obj));
 
 	}

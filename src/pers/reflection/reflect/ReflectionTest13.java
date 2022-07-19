@@ -43,6 +43,5 @@ public class ReflectionTest13 {
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-
     }
 }
