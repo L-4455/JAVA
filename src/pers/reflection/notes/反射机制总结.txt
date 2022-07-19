@@ -1,0 +1,38 @@
+1.总结来说反射机制还是不算很难,只是方法有点多,单词比较多,不太好记.
+2.最主要的是四个方法
+    2.1 获取修饰符列表
+    2.2 获取数据类型
+    2.3 获取名
+    2.4 获取参数列表类型
+3.常用方法单词
+    T newInstance()
+    Modifier
+    static String toString(int mod)
+    int getModifiers()
+
+    String getName()
+    String getSimpleName()
+
+    Class getType()
+    Field getField(String name)
+    Field[] getFields()
+    Class<?>[] getInterfaces()
+    Class<? super T> getSuperclass()
+    Object invoke(Object obj, Object... args)
+
+
+    Constructor<T> getDeclaredConstructor(Class<?>... parameterTypes)
+    Constructor<?>[] getDeclaredConstructors()
+
+    Field getDeclaredField(String name)
+    Field[] getDeclaredFields()
+
+    Method getDeclaredMethod(String name, Class<?>... parameterTypes)
+    Method[] getDeclaredMethods()
+    Class<?> getReturnType()
+    Class<?>[] getParameterTypes()
+
+
+
+
+

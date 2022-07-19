@@ -1,0 +1,6 @@
+1.资源绑定器是为了更方便的读取属性配置文件,不再使用IO + Properties 的联合使用.
+2.资源绑定器只能绑定类路径下的properties为后缀的文件.
+3.资源绑定器使用语法:
+    ResourceBundle resourceBundle = ResourceBundle.getBundle("属性配置文件名,不要加后缀");
+    通过key获取value
+    String value = resourceBundle.getString("key")

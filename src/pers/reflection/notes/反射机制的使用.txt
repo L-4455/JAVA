@@ -1,4 +1,15 @@
-1.怎么通过反射实例化对象?
+0.获取class文件的三种方式
+	0.1 
+	Class classFile = Class.forName("完整的类名");
+	0.2 
+	String s = "abc";
+	Class stringClass = s.getClass();
+	0.3 
+	Class intClass = int.class;
+	Class stringClass = String.class;
+
+
+1.通过反射实例化对象
     1.1 
     先试用Class.forName("完整的类名")方法获取到class文件.
     拿到返回值.newInstance();即可实例化对象.
@@ -18,7 +29,7 @@
 	Constructor constructor =  VipServiceClass.getDeclaredConstructor(int no, String name);
 	constructor.newInstance(101,"lisi");
 
-3.怎么通过反射机制访问属性?
+3.通过反射机制访问属性
 	3.1 
 	先获取Class文件,使用反射机制实例化对象.
 	Class vip = Class.forName("pers.reflection.bean.Vip");
@@ -26,12 +37,13 @@
 	3.2
 	在获取需要访问的属性:
 	Field AgeField = vip.getDeclaredField("age");
+	3.3
 	修改
 	AgeField.set(obj, 100);
 	获取
 	System.out.println(AgeField.get(obj));
 
-4.怎么通过反射机制获取属性的:修饰符列表,返回值,属性名 属性值?
+4.通过反射机制获取属性的:修饰符列表,返回值,属性名 属性值.
 	4.1
 	先获取Class文件,使用反射机制实例化对象.
 	Class vip = Class.forName("pers.reflection.bean.Vip");
@@ -39,6 +51,8 @@
 	4.2
 	在获取所有属性
 	Filed[] fields = vip.getDeclaredFields();
+	4.3
+	遍历该数组中的所有数据:
 	for(Field field : fields){
 	获取属性的修饰符列表:
 		System.out.println(Modifier.toString(field.Modifiers()));
@@ -57,30 +71,89 @@
 
 	}
 5.反射机制获取构造方法
-    .先获取class文件
-     Class vip = Class.forName("pers.reflection.bean.Vip");
-     Object obj = vip.newInstance();
-     Constructor[] constructors = vipClass.getDeclaredConstructors();
-        for (Constructor constructor : constructors){
-          获取构造方法的修饰符
-     	  System.out.println("构造方法修饰符:" + Modifier.toString(constructor.getModifiers()));
-
-          获取构造方法的方法名
-     	  System.out.println("构造方法名:" + vipClass.getSimpleName());
-
-          获取构造方法的形参类型
-     	  Class[] parameterTypes = constructor.getParameterTypes();
-     	  for (Class parameterType : parameterTypes){
-     	  System.out.println("构造方法形参类型:" + parameterType.getSimpleName());
-     	}
-     }
-
-.通过反射机制调用构造方法
-    5.1 先获取class文件
+    5.1 
+    先获取class文件
     Class vip = Class.forName("pers.reflection.bean.Vip");
     Object obj = vip.newInstance();
-	
 
+    5.2 
+    获取构造方法
+    Constructor[] constructors = vipClass.getDeclaredConstructors();
+    5.3
+    遍历数组中的数据,数组中保存就是构造方法
+        for (Constructor constructor : constructors){
+        获取构造方法的修饰符
+     	System.out.println("构造方法修饰符:" + Modifier.toString(constructor.getModifiers()));
+
+        获取构造方法的方法名
+     	System.out.println("构造方法名:" + vipClass.getSimpleName());
+
+        获取构造方法的形参类型
+     	Class[] parameterTypes = constructor.getParameterTypes();
+     	for (Class parameterType : parameterTypes){
+     	System.out.println("构造方法形参类型:" + parameterType.getSimpleName());
+     	}
+    }
+
+6.通过反射机制调用构造方法
+    5.1 
+    先获取class文件
+    Class vip = Class.forName("pers.reflection.bean.Vip");
+
+    5.2
+    调用无参数构造方法
+    Object obj = vip.newInstance();
+
+    5.3
+    调用有参数构造方法(参数传递主要看想调用哪个构造方法).
+    Constructor construeCtor = vip.getDeclaredConstructor(int.class, String.class, String.class, boolean.clas);
+    Object construeCtorObj = construeCtor.newInstance(101,"lisi", "zhengzhou", true);
+    System.out.println(constructorObj);
+
+7.通过反射机制获取方法
+	7.1
+	先获取class文件
+    Class vip = Class.forName("pers.reflection.bean.Vip");
+    Object obj = vip.newInstance()
+
+    7.2
+    获取所有方法
+    Method[] methods = vip.getDeclaredMethods();
+	for	(Method method : methods) {
+		获取方法修饰符列表
+		String modifierName = Modifier.toString(method.getModifiers());
+		System.out.println("方法修饰符: " + modifierName);
+			
+		获取方法的类型
+		Class<?> typeClass = method.getReturnType();
+		System.out.println(typeClass);
+		String typeName = typeClass.getSimpleName();
+		System.out.println("方法类型: " + typeName);
+
+		获取方法的方法名
+		String methodName = method.getName();
+		System.out.println("方法名: " + methodName);
+			
+		获取形参的类型
+		Class<?>[] parameterTypes = method.getParameterTypes();
+		for	(Class<?> parameterType : parameterTypes) {
+			System.out.println("方法形参类型: " + parameterType.getSimpleName());
+		}
+
+		System.out.println("");
+	}
+8.通过反射机制调用方法
+	8.1
+	先获取class文件
+    Class vip = Class.forName("pers.reflection.bean.Vip");
+    Object obj = vip.newInstance()
+    
+    8.2
+    调用方法
+    getDeclaredMethod()方法传递的参数是:要调用方法的方法名,方法形参的数据类型.
+	Method method = vipClass.getDeclaredMethod("login", String.class, String.class);
+	Object loginObj = method.invoke(obj, "root", "123");
+	System.out.println(loginObj);
 
 
 
