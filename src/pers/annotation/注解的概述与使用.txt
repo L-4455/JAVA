@@ -1,0 +1,80 @@
+1.什么是注解?
+    1.1
+    注解是一种引用数据类型,也叫注释类型.
+2.注解使用语法
+    2.1
+    自定义注解语法:
+    [修饰符列表] @interface 注解类型名{
+
+    }
+3.注解可以出现在哪里?
+    3.1
+    方法上
+    属性上
+    变量上
+    类上
+    注解上
+
+4.注解的注解
+    注解的注解称为元注解.
+
+5.JDK中内置常用的注解
+    Deprecated 用 @Deprecated 注释的程序元素，不鼓励程序员使用这样的元素，通常是因为它很危险或存在更好的选择。
+    Deprecated 代表为:修饰的元素已过时.
+    Deprecated源码:
+
+    保存策略,这里意思为:该注解保存在class文件中,且可被反射机制获取;
+    @Retention(RetentionPolicy.RUNTIME)
+    可以出现的位置:构造方法,属性,局部变量,方法,包,...参数类型
+    @Target(value={CONSTRUCTOR, FIELD, LOCAL_VARIABLE, METHOD, PACKAGE, PARAMETER, TYPE})
+    public @interface Deprecated {
+    }
+
+    Override 表示一个方法声明打算重写超类中的另一个方法声明。
+    Override 修饰的方法表示为:重写父类的方法.
+    Override的源码:
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Override {
+    }
+    期中@Target是元注解,@Retention也是元注解.
+    @Target(ElementType.METHOD) 表示为: 被注解的注解只能修饰方法.
+    @Retention(RetentionPolicy.SOURCE) 表示为保存策略,这里表示为被注解的注解保只保存在java源文件中.
+
+6.注解中可以有属性
+    6.1
+    注解中可以写属性
+     语法:
+      属性类型 属性名();
+    6.2
+    属性可以赋默认值,也可以不赋值.
+    当有属性时,在使用该注解是时必须给没有默认值的属性赋值.
+    当属性名为value且只有一个属性时,可以省略value.
+
+7.注解中的属性可以使用哪些类型?
+    可以使用:
+        byte short int long float double boolean char String Class enum
+        以及以上类型的数组类型.
+
+8.部分元注解源码分析.
+    8.1
+    Target元注解
+    public @interface Target {
+    ElementType是一个枚举,表示为该注解可以出现在哪里.
+        属性
+        ElementType[] value();
+    }
+    8.2
+    Retention元注解
+    public @interface Retention {
+        RetentionPolicy是一个枚举,表示为该注解保存策略.
+        属性
+        RetentionPolicy value();
+    }
+
+9.注解在开发中有什么用?
+      需求:
+      给一个@id注解,只能出现在类上,如果一个类使用了该注解
+      那么这个类中必须有一个int类型的id,否则报错.
+
+

@@ -1,4 +1,6 @@
-package pers.annotation;
+package pers.annotation.annotationtest;
+
+import pers.annotation.myannotation.MyAnnotation01;
 
 /**
  * @Author LiZiHao
@@ -9,9 +11,9 @@ public class AnnotationTest01 {
         m1();
     }
 
-    @MyAnnotation
+    @MyAnnotation01
     public static void m1() {
-        @MyAnnotation
+        @MyAnnotation01
         int i = 100;
 
         for (int j = 0; j < i; j++) {
